@@ -1,0 +1,111 @@
+{
+  "name": "DefiEdge",
+  "logo": "https://app.camelot.exchange/images/ext/defiedge.png",
+  "logoSm": "https://app.camelot.exchange/images/ext/defiedge.svg",
+  "42161": {
+    "api": "https://api.defiedge.io/graphql",
+    "depositProxy": "0xc4eb9fff53581130e65E3B60b31295C52509C11F",
+    "depositProxyAbi": "/abi/defiedge/defiedgeproxyhelper.json",
+    "vaults": [
+      {
+        "symbol": "ETH-USDC.e",
+        "strategy": "ALO",
+        "fullname": "DefiEdge ETH-USDC.e",
+        "address": "0x0D1c3645BDc77AfE77F14D54a01e26A47bD89BF2",
+        "poolAddress": "0x521aa84ab3fcc4c05cABaC24Dc3682339887B126",
+        "abi": "/abi/defiedge/defiedgevault.json",
+        "image": "https://app.camelot.exchange/images/vaults/defiedge-alo.svg",
+        "url": "https://camelot.defiedge.io/s/arbitrum/0x0d1c3645bdc77afe77f14d54a01e26a47bd89bf2",
+        "description": "Optimize your liquidity management with DeFiEdge\"s Automated Liquidity Optimization (ALO) solution. Designed to manage both narrow and wide ranges within a single strategy. ALO dynamically allocates liquidity in response to market volatility and fluctuations, aiming for consistent returns and reduced impermanent loss."
+      },
+      {
+        "symbol": "ARB-USDC.e",
+        "strategy": "ALO",
+        "fullname": "DefiEdge ARB-USDC.e",
+        "address": "0x6977eeE64dFDf8A40984A1ca809A623075A48D42",
+        "poolAddress": "0x4E635D35bB02576d0eAb75eF5E7EBE61C12F3C76",
+        "abi": "/abi/defiedge/defiedgevault.json",
+        "image": "defiedge-alo.svg",
+        "url": "https://camelot.defiedge.io/s/arbitrum/0x6977eeE64dFDf8A40984A1ca809A623075A48D42",
+        "description": "Optimize your liquidity management with DeFiEdge\"s Automated Liquidity Optimization (ALO) solution. Designed to manage both narrow and wide ranges within a single strategy. ALO dynamically allocates liquidity in response to market volatility and fluctuations, aiming for consistent returns and reduced impermanent loss."
+      },
+      {
+        "symbol": "ARB-ETH",
+        "strategy": "ALO",
+        "fullname": "DefiEdge ARB-ETH",
+        "address": "0x402FDFc475A6bEF3326dd074c3C0FeDb4f0ad0F1",
+        "poolAddress": "0xe51635ae8136aBAc44906A8f230C2D235E9c195F",
+        "abi": "/abi/defiedge/defiedgevault.json",
+        "image": "defiedge-alo.svg",
+        "url": "https://camelot.defiedge.io/s/arbitrum/0x6977eeE64dFDf8A40984A1ca809A623075A48D42",
+        "description": "Optimize your liquidity management with DeFiEdge\"s Automated Liquidity Optimization (ALO) solution. Designed to manage both narrow and wide ranges within a single strategy. ALO dynamically allocates liquidity in response to market volatility and fluctuations, aiming for consistent returns and reduced impermanent loss."
+      },
+      {
+        "symbol": "GMX-ETH",
+        "strategy": "ALO",
+        "fullname": "DefiEdge GMX-ETH",
+        "address": "0xb3e8C7ADF55ad36727DB62f1c881367D35A3153E",
+        "poolAddress": "0xC99be44383BC8d82357F5A1D9ae9976EE9d75bee",
+        "abi": "/abi/defiedge/defiedgevault.json",
+        "image": "defiedge-alo.svg",
+        "url": "https://camelot.defiedge.io/s/arbitrum/0xb3e8c7adf55ad36727db62f1c881367d35a3153e",
+        "description": "Optimize your liquidity management with DeFiEdge\"s Automated Liquidity Optimization (ALO) solution. Designed to manage both narrow and wide ranges within a single strategy. ALO dynamically allocates liquidity in response to market volatility and fluctuations, aiming for consistent returns and reduced impermanent loss."
+      },
+      {
+        "symbol": "ARB-USDC",
+        "strategy": "ALO",
+        "fullname": "DefiEdge ARB-USDC",
+        "address": "0x7Eb0747a2F4b4db80138729B462533787Bcaea2E",
+        "poolAddress": "0xfaE2AE0a9f87FD35b5b0E24B47BAC796A7EEfEa1",
+        "abi": "/abi/defiedge/defiedgevault.json",
+        "image": "defiedge-alo.svg",
+        "url": "https://camelot.defiedge.io/s/arbitrum/0x7eb0747a2f4b4db80138729b462533787bcaea2e",
+        "description": "Optimize your liquidity management with DeFiEdge\"s Automated Liquidity Optimization (ALO) solution. Designed to manage both narrow and wide ranges within a single strategy. ALO dynamically allocates liquidity in response to market volatility and fluctuations, aiming for consistent returns and reduced impermanent loss."
+      },
+      {
+        "symbol": "ETH-USDC",
+        "strategy": "ALO",
+        "fullname": "DefiEdge ETH-USDC",
+        "address": "0x9c5AbA4f5c78E638572407a677259e32df7519cD",
+        "poolAddress": "0xB1026b8e7276e7AC75410F1fcbbe21796e8f7526",
+        "abi": "/abi/defiedge/defiedgevault.json",
+        "image": "defiedge-alo.svg",
+        "url": "https://camelot.defiedge.io/s/arbitrum/0x9c5aba4f5c78e638572407a677259e32df7519cd",
+        "description": "Optimize your liquidity management with DeFiEdge\"s Automated Liquidity Optimization (ALO) solution. Designed to manage both narrow and wide ranges within a single strategy. ALO dynamically allocates liquidity in response to market volatility and fluctuations, aiming for consistent returns and reduced impermanent loss."
+      },
+      {
+        "symbol": "GRAIL-USDC.e",
+        "strategy": "ALO",
+        "fullname": "DefiEdge GRAIL-USDC.e",
+        "address": "0x5A4628Be9f5E838aa634c45Cb2Fa258FCCBaF52d",
+        "poolAddress": "0x8cc8093218bCaC8B1896A1EED4D925F6F6aB289F",
+        "abi": "/abi/defiedge/defiedgevault.json",
+        "image": "defiedge-alo.svg",
+        "url": "https://camelot.defiedge.io/s/arbitrum/0x5a4628be9f5e838aa634c45cb2fa258fccbaf52d",
+        "description": "Optimize your liquidity management with DeFiEdge\"s Automated Liquidity Optimization (ALO) solution. Designed to manage both narrow and wide ranges within a single strategy. ALO dynamically allocates liquidity in response to market volatility and fluctuations, aiming for consistent returns and reduced impermanent loss."
+      },
+      {
+        "symbol": "KUJI-ETH",
+        "strategy": "ALO",
+        "fullname": "DefiEdge KUJI-ETH",
+        "address": "0xCCeE66fe04B1b403fFDeaBc4f3e12e390ec99497",
+        "poolAddress": "0x22427D20480DE289795Ca29c3ADDdb57A568e285",
+        "abi": "/abi/defiedge/defiedgevault.json",
+        "image": "defiedge-alo.svg",
+        "url": "https://camelot.defiedge.io/s/arbitrum/0xccee66fe04b1b403ffdeabc4f3e12e390ec99497",
+        "description": "Optimize your liquidity management with DeFiEdge\"s Automated Liquidity Optimization (ALO) solution. Designed to manage both narrow and wide ranges within a single strategy. ALO dynamically allocates liquidity in response to market volatility and fluctuations, aiming for consistent returns and reduced impermanent loss."
+      },
+      {
+        "symbol": "KUJI-USDC",
+        "strategy": "ALO",
+        "fullname": "DefiEdge KUJI-USDC",
+        "address": "0x6f72aa5e1b42f0d091ba6c2b9fe3e326a3df6160",
+        "poolAddress": "0xD8043be1668FAc205B9747E46D0C26c1Eae2708f",
+        "abi": "/abi/defiedge/defiedgevault.json",
+        "image": "defiedge-alo.svg",
+        "url": "https://camelot.defiedge.io/s/arbitrum/0x6f72aa5e1b42f0d091ba6c2b9fe3e326a3df6160",
+        "description": "Optimize your liquidity management with DeFiEdge\"s Automated Liquidity Optimization (ALO) solution. Designed to manage both narrow and wide ranges within a single strategy. ALO dynamically allocates liquidity in response to market volatility and fluctuations, aiming for consistent returns and reduced impermanent loss."
+      }
+    ]
+  }
+}

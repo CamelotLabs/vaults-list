@@ -1,0 +1,23 @@
+{
+  "name": "camelot-vaults-list",
+  "version": "1.0.0",
+  "author": "Camelot Labs",
+  "license": "GPLV3",
+  "scripts": {
+    "test": "mocha",
+    "build": "mkdir -p build && node src/write.js > build/vaults.json && cp -R src/abi build/ && cp _redirects build/"
+  },
+  "files": [
+    "build/vaults.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CamelotLabs/vaults-list.git"
+  },
+  "devDependencies": {
+    "@ethersproject/address": "^5.7.0",
+    "ajv": "6.12.3",
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0"
+  }
+}

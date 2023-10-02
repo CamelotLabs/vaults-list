@@ -1,0 +1,215 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Camelot Vaults List",
+  "definitions": {
+    "ContractAddress": {
+      "type": "string",
+      "description": "The checksummed address of a contract on the specified chain ID",
+      "pattern": "^0x[a-fA-F0-9]{40}$",
+      "examples": [
+        "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
+      ]
+    },
+    "VaultInfo": {
+      "type": "object",
+      "description": "Metadata for a single vault in a vaults list",
+      "additionalProperties": false,
+      "properties": {
+        "chainId": {
+          "type": "integer",
+          "description": "The chain ID of the network where this token is deployed",
+          "minimum": 1,
+          "examples": [
+            1,
+            42161
+          ]
+        },
+        "id": {
+          "type": "string",
+          "description": "The name of the protocol",
+          "minLength": 2,
+          "maxLength": 32,
+          "examples": [
+            "Camelot DEX"
+          ]
+        },
+        "name": {
+          "type": "string",
+          "description": "The name of the protocol",
+          "minLength": 2,
+          "maxLength": 32,
+          "examples": [
+            "Camelot DEX"
+          ]
+        },
+        "logo": {
+          "type": "string",
+          "description": "A URI to the protocol logo asset; suggest SVG or PNG of size 64x64",
+          "format": "uri",
+          "examples": [
+            "https://s2.coinmarketcap.com/static/img/coins/64x64/22949.png"
+          ]
+        },
+        "cover": {
+          "type": "string",
+          "description": "A URI to the protocol cover asset; suggest SVG or PNG of size 650x200",
+          "format": "uri-template",
+          "examples": [
+            "https://camelot.exchange/img/knight-hero.svg"
+          ]
+        },
+        "tagline": {
+          "type": "string",
+          "description": "One short catchphrase or sentence summarizing the protocol",
+          "minLength": 0,
+          "maxLength": 128,
+          "examples": [
+            "Camelot DEX"
+          ]
+        },
+        "tags": {
+          "type": "array",
+          "description": "An array of tag identifiers associated with the protocol",
+          "items": {
+            "$ref": "#/definitions/TagIdentifier"
+          },
+          "maxItems": 10,
+          "examples": [
+            "stablecoin",
+            "compound"
+          ]
+        },
+        "description": {
+          "type": "string",
+          "description": "General description of the protocol",
+          "minLength": 0,
+          "maxLength": 600,
+          "examples": [
+            "Camelot DEX"
+          ]
+        },
+        "decimals": {
+          "type": "integer",
+          "description": "The number of decimals for the token balance",
+          "minimum": 0,
+          "maximum": 255,
+          "examples": [
+            18
+          ]
+        },
+        "tokens": {
+          "type": "array",
+          "description": "An array of tokens addresses associated with the protocol",
+          "items": {
+            "$ref": "#/definitions/TokenAddress"
+          },
+          "minItems": 1,
+          "maxItems": 10
+        },
+        "twitter": {
+          "type": "string",
+          "description": "A URI to the protocol's twitter page",
+          "format": "uri-template",
+          "examples": [
+            "https://twitter.com/camelotdex"
+          ]
+        },
+        "discord": {
+          "type": "string",
+          "description": "A URI to the protocol's twitter page",
+          "format": "uri-template",
+          "examples": [
+            "https://discord.com/invite/camelotdex"
+          ]
+        },
+        "docs": {
+          "type": "string",
+          "description": "A URI to the protocol's twitter page",
+          "format": "uri-template",
+          "examples": [
+            "https://docs.camelot.exchange"
+          ]
+        },
+        "blog": {
+          "type": "string",
+          "description": "A URI to the protocol's twitter page",
+          "format": "uri-template",
+          "examples": [
+            "https://camelotdex.medium.com"
+          ]
+        },
+        "github": {
+          "type": "string",
+          "description": "A URI to the protocol's twitter page",
+          "format": "uri-template",
+          "examples": [
+            "https://github.com/CamelotLabs"
+          ]
+        },
+        "telegram": {
+          "type": "string",
+          "description": "A URI to the protocol's twitter page",
+          "format": "uri-template",
+          "examples": [
+            "https://t.me/camelotdex"
+          ]
+        },
+        "defillama": {
+          "type": "string",
+          "description": "A URI to the protocol's twitter page",
+          "format": "uri-template",
+          "examples": [
+            "https://defillama.com/protocol/camelot"
+          ]
+        },
+        "website": {
+          "type": "string",
+          "description": "A URI to the protocol's twitter page",
+          "format": "uri-template",
+          "examples": [
+            "https://app.camelot.exchange"
+          ]
+        }
+      },
+      "required": [
+        "chainId",
+        "id",
+        "name",
+        "logo",
+        "cover",
+        "tagline",
+        "tags",
+        "description",
+        "tokens",
+        "website"
+      ]
+    }
+  },
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the list"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "The timestamp of this list version; i.e. when this immutable version of the list was created"
+    },
+    "vaults": {
+      "type": "array",
+      "description": "The list of vaults included in the list",
+      "items": {
+        "$ref": "#/definitions/VaultInfo"
+      },
+      "minItems": 1,
+      "maxItems": 10000
+    }
+  },
+  "required": [
+    "name",
+    "timestamp",
+    "vaults"
+  ]
+}

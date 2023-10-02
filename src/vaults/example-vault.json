@@ -1,0 +1,23 @@
+{
+  "name": "Example vaults",
+  "logo": "https://app.camelot.exchange/images/ext/example.svg",
+  "logoSm": "https://app.camelot.exchange/images/ext/example-sm.svg",
+  "data": {
+    "42161": {
+      "depositProxy": "0x851b3Fb3c3178Cd3FBAa0CdaAe0175Efa15a30f1",
+      "depositProxyAbi": "/abi/example/examplealmabi.json",
+      "pools": [
+        {
+          "symbol": "ETH-USDC.e",
+          "fullname": "Example Strategy ETH-USDC.e",
+          "address": "0xA07770f83A7B0fD74510AEFe3E48749e3a0924Cc",
+          "abi": "/abi/gamma/examplestrategyabi.json",
+          "strategy": "Strategy name",
+          "image": "https://app.camelot.exchange/images/vaults/example-strategy.svg",
+          "url": "https://example.com/camelot/strategy",
+          "excerpt": "Strategy short description"
+        }
+      ]
+    }
+  }
+}
