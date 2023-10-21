@@ -101,7 +101,7 @@
           "symbol": "KUJI-USDC",
           "strategy": "ALO",
           "fullname": "DefiEdge KUJI-USDC",
-          "address": "0x6f72aa5e1b42f0d091ba6c2b9fe3e326a3df6160",
+          "address": "0x6F72AA5e1b42F0d091Ba6C2b9fE3E326A3DF6160",
           "poolAddress": "0xD8043be1668FAc205B9747E46D0C26c1Eae2708f",
           "abi": "BASE_URL/abi/defiedge/defiedgevault.json",
           "image": "BASE_URL/images/defiedge/strategy-alo.svg",
