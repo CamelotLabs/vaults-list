@@ -10,7 +10,7 @@
         "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
       ]
     },
-    "VaultInfo": {
+    "ALMInfo": {
       "type": "object",
       "description": "Metadata for a single vault in a vaults list",
       "additionalProperties": false,
@@ -197,11 +197,11 @@
       "format": "date-time",
       "description": "The timestamp of this list version; i.e. when this immutable version of the list was created"
     },
-    "vaults": {
+    "alms": {
       "type": "array",
-      "description": "The list of vaults included in the list",
+      "description": "The list of ALM protocols included in the list",
       "items": {
-        "$ref": "#/definitions/VaultInfo"
+        "$ref": "#/definitions/ALMInfo"
       },
       "minItems": 1,
       "maxItems": 10000
@@ -210,6 +210,6 @@
   "required": [
     "name",
     "timestamp",
-    "vaults"
+    "alms"
   ]
 }

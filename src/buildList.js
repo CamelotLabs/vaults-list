@@ -9,7 +9,7 @@ module.exports = function buildList() {
     const processedVaults = JSON.parse(JSON.stringify(vaults).replace(/BASE_URL/g, BASE_URL))
 
     return {
-        name: "Camelot Vaults",
+        name: "Camelot ALM Vaults",
         timestamp: new Date().toISOString(),
         vaults: processedVaults
     };
