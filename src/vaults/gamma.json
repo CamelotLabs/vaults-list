@@ -1,7 +1,7 @@
 {
   "name": "Gamma",
-  "logo": "BASE_URL/images/gamma/logo.png",
-  "logoSm": "BASE_URL/images/gamma/logo-sm.svg",
+  "logo": "BASE_URL/assets/gamma/logo.png",
+  "logoSm": "BASE_URL/assets/gamma/logo-sm.svg",
   "chains": [
     {
       "chainId": 42161,
@@ -16,7 +16,7 @@
           "address": "0xA07770f83A7B0fD74510AEFe3E48749e3a0924Cc",
           "poolAddress": "0x521aa84ab3fcc4c05cABaC24Dc3682339887B126",
           "abi": "BASE_URL/abi/gamma/gammavault.json",
-          "image": "BASE_URL/images/gamma/strategy-wide.svg",
+          "image": "BASE_URL/assets/gamma/strategy-wide.svg",
           "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/weth-usdc.e-wide",
           "description": "The wide-range strategy will tend to earn less in fees and rewards, but may suffer less impermanent loss in a volatile environment. So while it may have less earning potential, it is likely to suffer less drawdowns."
         },
@@ -27,7 +27,7 @@
           "address": "0x809acD841cDEDCCCd881a5e8D764903aD8d6D837",
           "poolAddress": "0x521aa84ab3fcc4c05cABaC24Dc3682339887B126",
           "abi": "BASE_URL/abi/gamma/gammavault.json",
-          "image": "BASE_URL/images/gamma/strategy-narrow.svg",
+          "image": "BASE_URL/assets/gamma/strategy-narrow.svg",
           "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/weth-usdc.e-narrow",
           "description": "The narrow-range strategy will tend to earn more in fees and rewards, but may potentially incur greater losses in a highly volatile market. Narrow range strategies tend to do well when there is less volatility or when there are high fees and rewards."
         },
@@ -38,7 +38,7 @@
           "address": "0x199d37B97341e8C0ba2CAc059884bFd63B6867d0",
           "poolAddress": "0xB1026b8e7276e7AC75410F1fcbbe21796e8f7526",
           "abi": "BASE_URL/abi/gamma/gammavault.json",
-          "image": "BASE_URL/images/gamma/strategy-wide.svg",
+          "image": "BASE_URL/assets/gamma/strategy-wide.svg",
           "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/weth-usdc-wide",
           "description": "The wide-range strategy will tend to earn less in fees and rewards, but may suffer less impermanent loss in a volatile environment.  So while it may have less earning potential, it is likely to suffer less drawdowns."
         },
@@ -49,7 +49,7 @@
           "address": "0xd7Ef5Ac7fd4AAA7994F3bc1D273eAb1d1013530E",
           "poolAddress": "0xB1026b8e7276e7AC75410F1fcbbe21796e8f7526",
           "abi": "BASE_URL/abi/gamma/gammavault.json",
-          "image": "BASE_URL/images/gamma/strategy-narrow.svg",
+          "image": "BASE_URL/assets/gamma/strategy-narrow.svg",
           "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/weth-usdc-narrow",
           "description": "The narrow-range strategy will tend to earn more in fees and rewards, but may potentially incur greater losses in a highly volatile market. Narrow range strategies tend to do well when there is less volatility or when there are high fees and rewards."
         },
@@ -60,7 +60,7 @@
           "address": "0x4E3019Be228b980DfF03b5a00aC9E736312Be559",
           "poolAddress": "0x7CcCBA38E2D959fe135e79AEBB57CCb27B128358",
           "abi": "BASE_URL/abi/gamma/gammavault.json",
-          "image": "BASE_URL/images/gamma/strategy-wide.svg",
+          "image": "BASE_URL/assets/gamma/strategy-wide.svg",
           "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/weth-usdt-wide",
           "description": "The wide-range strategy will tend to earn less in fees and rewards, but may suffer less impermanent loss in a volatile environment.  So while it may have less earning potential, it is likely to suffer less drawdowns."
         },
@@ -71,7 +71,7 @@
           "address": "0x9330e26b5Fc0b7c417C6bD901528d5c65BE5cdf2",
           "poolAddress": "0x7CcCBA38E2D959fe135e79AEBB57CCb27B128358",
           "abi": "BASE_URL/abi/gamma/gammavault.json",
-          "image": "BASE_URL/images/gamma/strategy-narrow.svg",
+          "image": "BASE_URL/assets/gamma/strategy-narrow.svg",
           "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/weth-usdt-narrow",
           "description": "The narrow-range strategy will tend to earn more in fees and rewards, but may potentially incur greater losses in a highly volatile market. Narrow range strategies tend to do well when there is less volatility or when there are high fees and rewards."
         },
@@ -82,7 +82,7 @@
           "address": "0x9bEA41C900394F83375B9198D04Be6F63Db00090",
           "poolAddress": "0xfaE2AE0a9f87FD35b5b0E24B47BAC796A7EEfEa1",
           "abi": "BASE_URL/abi/gamma/gammavault.json",
-          "image": "BASE_URL/images/gamma/strategy-wide.svg",
+          "image": "BASE_URL/assets/gamma/strategy-wide.svg",
           "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/arb-usdc-wide",
           "description": "The wide-range strategy will tend to earn less in fees and rewards, but may suffer less impermanent loss in a volatile environment.  So while it may have less earning potential, it is likely to suffer less drawdowns."
         },
@@ -93,7 +93,7 @@
           "address": "0x29237292F15BC3615BFCc0D958C265Aa64527FB2",
           "poolAddress": "0xfaE2AE0a9f87FD35b5b0E24B47BAC796A7EEfEa1",
           "abi": "BASE_URL/abi/gamma/gammavault.json",
-          "image": "BASE_URL/images/gamma/strategy-narrow.svg",
+          "image": "BASE_URL/assets/gamma/strategy-narrow.svg",
           "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/arb-usdc-narrow",
           "description": "The narrow-range strategy will tend to earn more in fees and rewards, but may potentially incur greater losses in a highly volatile market. Narrow range strategies tend to do well when there is less volatility or when there are high fees and rewards."
         },
@@ -104,7 +104,7 @@
           "address": "0x5694abF323EA8aa0Af514f588B0Ec727816f2611",
           "poolAddress": "0xe51635ae8136aBAc44906A8f230C2D235E9c195F",
           "abi": "BASE_URL/abi/gamma/gammavault.json",
-          "image": "BASE_URL/images/gamma/strategy-wide.svg",
+          "image": "BASE_URL/assets/gamma/strategy-wide.svg",
           "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/weth-arb-wide",
           "description": "The wide-range strategy will tend to earn less in fees and rewards, but may suffer less impermanent loss in a volatile environment.  So while it may have less earning potential, it is likely to suffer less drawdowns."
         },
@@ -115,7 +115,7 @@
           "address": "0x863cb3E55526Fa2F7e6b04ecf21Ea39143AC8056",
           "poolAddress": "0xe51635ae8136aBAc44906A8f230C2D235E9c195F",
           "abi": "BASE_URL/abi/gamma/gammavault.json",
-          "image": "BASE_URL/images/gamma/strategy-narrow.svg",
+          "image": "BASE_URL/assets/gamma/strategy-narrow.svg",
           "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/weth-arb-narrow",
           "description": "The narrow-range strategy will tend to earn more in fees and rewards, but may potentially incur greater losses in a highly volatile market. Narrow range strategies tend to do well when there is less volatility or when there are high fees and rewards."
         },
@@ -126,7 +126,7 @@
           "address": "0x1768eADFda4740F7Caa741C08dD6419ac4033623",
           "poolAddress": "0x8cc8093218bCaC8B1896A1EED4D925F6F6aB289F",
           "abi": "BASE_URL/abi/gamma/gammavault.json",
-          "image": "BASE_URL/images/gamma/strategy-wide.svg",
+          "image": "BASE_URL/assets/gamma/strategy-wide.svg",
           "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/grail-usdc.e-wide",
           "description": "The wide-range strategy will tend to earn less in fees and rewards, but may suffer less impermanent loss in a volatile environment.  So while it may have less earning potential, it is likely to suffer less drawdowns."
         },
@@ -137,7 +137,7 @@
           "address": "0x36260CB6DF1cfdAa7522bddF7e2f9Ae8E86BEF58",
           "poolAddress": "0x8cc8093218bCaC8B1896A1EED4D925F6F6aB289F",
           "abi": "BASE_URL/abi/gamma/gammavault.json",
-          "image": "BASE_URL/images/gamma/strategy-narrow.svg",
+          "image": "BASE_URL/assets/gamma/strategy-narrow.svg",
           "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/grail-usdc.e-narrow",
           "description": "The narrow-range strategy will tend to earn more in fees and rewards, but may potentially incur greater losses in a highly volatile market. Narrow range strategies tend to do well when there is less volatility or when there are high fees and rewards."
         },
@@ -148,7 +148,7 @@
           "address": "0x23E60c9D50d64488C7C8c77aF43b306fe531B39D",
           "poolAddress": "0x13BC35D101B646Cf1F566f95077E67a9f5b301a3",
           "abi": "BASE_URL/abi/gamma/gammavault.json",
-          "image": "BASE_URL/images/gamma/strategy-wide.svg",
+          "image": "BASE_URL/assets/gamma/strategy-wide.svg",
           "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/pnp-weth-wide",
           "description": "The wide-range strategy will tend to earn less in fees and rewards, but may suffer less impermanent loss in a volatile environment.  So while it may have less earning potential, it is likely to suffer less drawdowns."
         },
@@ -159,7 +159,7 @@
           "address": "0xf9403DeECBc3eDDa78DB2995DEa1a87Ffe141760",
           "poolAddress": "0x13BC35D101B646Cf1F566f95077E67a9f5b301a3",
           "abi": "BASE_URL/abi/gamma/gammavault.json",
-          "image": "BASE_URL/images/gamma/strategy-narrow.svg",
+          "image": "BASE_URL/assets/gamma/strategy-narrow.svg",
           "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/pnp-weth-narrow",
           "description": "The narrow-range strategy will tend to earn more in fees and rewards, but may potentially incur greater losses in a highly volatile market. Narrow range strategies tend to do well when there is less volatility or when there are high fees and rewards."
         },
@@ -170,7 +170,7 @@
           "address": "0xBFD344C1F8664b5E1a8BE936Ce9Ae2dfD1073661",
           "poolAddress": "0xe4E4aEA5150f0FA2b302b7B69427ecFb2A56133a",
           "abi": "BASE_URL/abi/gamma/gammavault.json",
-          "image": "BASE_URL/images/gamma/strategy-narrow.svg",
+          "image": "BASE_URL/assets/gamma/strategy-narrow.svg",
           "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/dmt-usdc.e-narrow",
           "description": "The narrow-range strategy will tend to earn more in fees and rewards, but may potentially incur greater losses in a highly volatile market. Narrow range strategies tend to do well when there is less volatility or when there are high fees and rewards."
         },
@@ -181,7 +181,7 @@
           "address": "0x4D519650E86bc7fCab036314a160653FBcfE05C4",
           "poolAddress": "0x47A52B2beE1a0cc9A34BB9EE34C357C054112c3E",
           "abi": "BASE_URL/abi/gamma/gammavault.json",
-          "image": "BASE_URL/images/gamma/strategy-stable.svg",
+          "image": "BASE_URL/assets/gamma/strategy-stable.svg",
           "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/plsarb-arb-stable",
           "description": "Liquidity ranges are aimed to straddle 1 at various ranges depending on backtesting results.  For more volatile stablecoin pairs, wider ranges will be used, and for blue-chip stables, narrower ranges will be used."
         },
@@ -192,7 +192,7 @@
           "address": "0x8C37f053662c3e02288362B0c0f0c09487082D42",
           "poolAddress": "0xc9AA2fEB84F0134a38d5D1c56b1E787191327Cb0",
           "abi": "BASE_URL/abi/gamma/gammavault.json",
-          "image": "BASE_URL/images/gamma/strategy-pegged-price.svg",
+          "image": "BASE_URL/assets/gamma/strategy-pegged-price.svg",
           "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/euros-usdc-pegged-price",
           "description": "Liquidity is provided directly around the net asset value of a provided asset. For example, a wrapped, staked ETH derivative asset will be provided only within a fixed range around its net asset value."
         },
@@ -203,7 +203,7 @@
           "address": "0x2f0d2E9265cf4C43C0105da8c03aEF2aE6d92DE4",
           "poolAddress": "0x43994B979F67B0c51687b3d167b8dC9c6ED304F5",
           "abi": "BASE_URL/abi/gamma/gammavault.json",
-          "image": "BASE_URL/images/gamma/strategy-wide.svg",
+          "image": "BASE_URL/assets/gamma/strategy-wide.svg",
           "url": "https://app.gamma.xyz/dashboard/camelot/arbitrum",
           "description": "The wide-range strategy will tend to earn less in fees and rewards, but may suffer less impermanent loss in a volatile environment.  So while it may have less earning potential, it is likely to suffer less drawdowns."
         },
@@ -214,7 +214,7 @@
           "address": "0x075b6c049B12490809f8D450528465F444AE448F",
           "poolAddress": "0xC6E932f9107A9EB2570E39697C1bEcF2c9551770",
           "abi": "BASE_URL/abi/gamma/gammavault.json",
-          "image": "BASE_URL/images/gamma/strategy-narrow.svg",
+          "image": "BASE_URL/assets/gamma/strategy-narrow.svg",
           "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/flr-usdc.e-narrow",
           "description": "The narrow-range strategy will tend to earn more in fees and rewards, but may potentially incur greater losses in a highly volatile market. Narrow range strategies tend to do well when there is less volatility or when there are high fees and rewards."
         }

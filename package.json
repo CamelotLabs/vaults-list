@@ -5,7 +5,7 @@
   "license": "GPLV3",
   "scripts": {
     "test": "mocha",
-    "build": "mkdir -p build && node src/write.js > build/vaults.json && cp -R src/abi build/ && cp -R src/images build/ && cp _redirects build/"
+    "build": "mkdir -p build && node src/write.js > build/vaults.json && cp -R src/abi build/ && cp -R src/assets build/ && cp _redirects build/"
   },
   "files": [
     "build/vaults.json"
