@@ -1,188 +1,148 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "Camelot Vaults List",
+  "title": "Camelot ALM Vaults List",
   "definitions": {
     "ContractAddress": {
       "type": "string",
       "description": "The checksummed address of a contract on the specified chain ID",
       "pattern": "^0x[a-fA-F0-9]{40}$",
-      "examples": [
-        "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
-      ]
+      "examples": ["0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"]
     },
-    "ALMInfo": {
+    "StrategyInfo": {
       "type": "object",
-      "description": "Metadata for a single vault in a vaults list",
+      "description": "Metadata for a strategy",
+      "additionalProperties": false,
+      "properties": {
+        "symbol": {
+          "type": "string",
+          "description": "The symbol of the pair",
+          "pattern": "^.+-.+$",
+          "examples": ["ETH-USDC", "USDC.e-USDT"]
+        },
+        "strategy": {
+          "type": "string",
+          "description": "The short name of the strategy",
+          "minLength": 2,
+          "maxLength": 16,
+          "examples": ["Narrow", "Wide"]
+        },
+        "fullname": {
+          "type": "string",
+          "description": "The full name of the strategy",
+          "minLength": 2,
+          "maxLength": 64,
+          "examples": ["Gamma Narrow ETH-USDC.e"]
+        },
+        "address": {
+          "type": "string",
+          "description": "The contract address of the strategy",
+          "pattern": "^0x[a-fA-F0-9]{40}$",
+          "examples": ["0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"]
+        },
+        "poolAddress": {
+          "type": "string",
+          "description": "The contract address of the V3 pool",
+          "pattern": "^0x[a-fA-F0-9]{40}$",
+          "examples": ["0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"]
+        },
+        "abi": {
+          "type": "string",
+          "description": "A URI to the strategy ABI",
+          "format": "uri-template",
+          "examples": ["https://vaults-list.camelot.exchange/abi/gamma/gammavault.json"]
+        },
+        "image": {
+          "type": "string",
+          "description": "A URI to the strategy illustration asset; suggest SVG",
+          "format": "uri-template",
+          "examples": ["https://vaults-list.camelot.exchange/images/gamma/narrow.svg"]
+        },
+        "url": {
+          "type": "string",
+          "description": "A URI to the strategy page on the ALM app",
+          "format": "uri-template",
+          "examples": ["https://app.gamma.xyz/vault/camelot/arbitrum/details/weth-usdc.e-narrow"]
+        },
+        "description": {
+          "type": "string",
+          "description": "A short description of the strategy",
+          "minLength": 32,
+          "maxLength": 512
+        }
+      },
+      "required": ["symbol", "strategy", "fullname", "address", "poolAddress", "abi", "image", "url", "description"]
+    },
+    "ChainInfo": {
+      "type": "object",
+      "description": "Metadata for vaults on a single chain for an ALM",
       "additionalProperties": false,
       "properties": {
         "chainId": {
           "type": "integer",
-          "description": "The chain ID of the network where this token is deployed",
+          "description": "The chain ID of the network where vaults are deployed",
           "minimum": 1,
-          "examples": [
-            1,
-            42161
-          ]
+          "examples": [1, 62141]
         },
-        "id": {
+        "api": {
           "type": "string",
-          "description": "The name of the protocol",
-          "minLength": 2,
-          "maxLength": 32,
-          "examples": [
-            "Camelot DEX"
-          ]
+          "description": "A URI to the protocol's API",
+          "format": "uri-template",
+          "examples": ["https://api.almvaults.com/data"]
         },
+        "depositProxy": {
+          "type": "string",
+          "description": "The checksummed address of Camelot's depositProxy for the specified ALM on this chainId",
+          "pattern": "^0x[a-fA-F0-9]{40}$",
+          "examples": ["0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"]
+        },
+        "depositProxyAbi": {
+          "type": "string",
+          "description": "A URI to Camelot's depositProxy ABI for the specified ALM on this chainId",
+          "format": "uri-template",
+          "examples": ["https://vaults-list.camelot.exchange/abi/gamma/gammaproxyabi.json"]
+        },
+        "strategies": {
+          "description": "An array of strategies info associated with the ALM on this chain",
+          "items": {
+            "$ref": "#/definitions/StrategyInfo"
+          }
+        }
+      },
+      "required": ["chainId", "api", "depositProxy", "depositProxyAbi", "strategies"]
+    },
+    "ALMInfo": {
+      "type": "object",
+      "description": "Metadata for a single ALM in an ALMs list",
+      "additionalProperties": false,
+      "properties": {
         "name": {
           "type": "string",
-          "description": "The name of the protocol",
+          "description": "The name of the ALM protocol",
           "minLength": 2,
           "maxLength": 32,
-          "examples": [
-            "Camelot DEX"
-          ]
+          "examples": ["Gamma"]
         },
         "logo": {
           "type": "string",
-          "description": "A URI to the protocol logo asset; suggest SVG or PNG of size 64x64",
-          "format": "uri",
-          "examples": [
-            "https://s2.coinmarketcap.com/static/img/coins/64x64/22949.png"
-          ]
-        },
-        "cover": {
-          "type": "string",
-          "description": "A URI to the protocol cover asset; suggest SVG or PNG of size 650x200",
+          "description": "A URI to the protocol wide logo asset; suggest SVG or PNG",
           "format": "uri-template",
-          "examples": [
-            "https://camelot.exchange/img/knight-hero.svg"
-          ]
+          "examples": ["https://vaults-list.camelot.exchange/images/gamma/logo.png"]
         },
-        "tagline": {
+        "logoSm": {
           "type": "string",
-          "description": "One short catchphrase or sentence summarizing the protocol",
-          "minLength": 0,
-          "maxLength": 128,
-          "examples": [
-            "Camelot DEX"
-          ]
+          "description": "A URI to the protocol square logo asset; suggest SVG or PNG size 64x64",
+          "format": "uri-template",
+          "examples": ["https://vaults-list.camelot.exchange/images/gamma/logo-sm.svg"]
         },
-        "tags": {
+        "chains": {
           "type": "array",
-          "description": "An array of tag identifiers associated with the protocol",
+          "description": "An array of chains info associated with the protocol",
           "items": {
-            "$ref": "#/definitions/TagIdentifier"
-          },
-          "maxItems": 10,
-          "examples": [
-            "stablecoin",
-            "compound"
-          ]
-        },
-        "description": {
-          "type": "string",
-          "description": "General description of the protocol",
-          "minLength": 0,
-          "maxLength": 600,
-          "examples": [
-            "Camelot DEX"
-          ]
-        },
-        "decimals": {
-          "type": "integer",
-          "description": "The number of decimals for the token balance",
-          "minimum": 0,
-          "maximum": 255,
-          "examples": [
-            18
-          ]
-        },
-        "tokens": {
-          "type": "array",
-          "description": "An array of tokens addresses associated with the protocol",
-          "items": {
-            "$ref": "#/definitions/TokenAddress"
-          },
-          "minItems": 1,
-          "maxItems": 10
-        },
-        "twitter": {
-          "type": "string",
-          "description": "A URI to the protocol's twitter page",
-          "format": "uri-template",
-          "examples": [
-            "https://twitter.com/camelotdex"
-          ]
-        },
-        "discord": {
-          "type": "string",
-          "description": "A URI to the protocol's twitter page",
-          "format": "uri-template",
-          "examples": [
-            "https://discord.com/invite/camelotdex"
-          ]
-        },
-        "docs": {
-          "type": "string",
-          "description": "A URI to the protocol's twitter page",
-          "format": "uri-template",
-          "examples": [
-            "https://docs.camelot.exchange"
-          ]
-        },
-        "blog": {
-          "type": "string",
-          "description": "A URI to the protocol's twitter page",
-          "format": "uri-template",
-          "examples": [
-            "https://camelotdex.medium.com"
-          ]
-        },
-        "github": {
-          "type": "string",
-          "description": "A URI to the protocol's twitter page",
-          "format": "uri-template",
-          "examples": [
-            "https://github.com/CamelotLabs"
-          ]
-        },
-        "telegram": {
-          "type": "string",
-          "description": "A URI to the protocol's twitter page",
-          "format": "uri-template",
-          "examples": [
-            "https://t.me/camelotdex"
-          ]
-        },
-        "defillama": {
-          "type": "string",
-          "description": "A URI to the protocol's twitter page",
-          "format": "uri-template",
-          "examples": [
-            "https://defillama.com/protocol/camelot"
-          ]
-        },
-        "website": {
-          "type": "string",
-          "description": "A URI to the protocol's twitter page",
-          "format": "uri-template",
-          "examples": [
-            "https://app.camelot.exchange"
-          ]
+            "$ref": "#/definitions/ChainInfo"
+          }
         }
       },
-      "required": [
-        "chainId",
-        "id",
-        "name",
-        "logo",
-        "cover",
-        "tagline",
-        "tags",
-        "description",
-        "tokens",
-        "website"
-      ]
+      "required": ["name", "logo", "logoSm", "chains"]
     }
   },
   "type": "object",
@@ -197,7 +157,7 @@
       "format": "date-time",
       "description": "The timestamp of this list version; i.e. when this immutable version of the list was created"
     },
-    "alms": {
+    "vaults": {
       "type": "array",
       "description": "The list of ALM protocols included in the list",
       "items": {
@@ -210,6 +170,6 @@
   "required": [
     "name",
     "timestamp",
-    "alms"
+    "vaults"
   ]
 }
