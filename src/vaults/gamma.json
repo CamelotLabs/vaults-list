@@ -1,7 +1,7 @@
 {
   "name": "Gamma",
   "logo": "BASE_URL/images/gamma/logo.png",
-  "logoSm": "BASE_URL/images/gamma/logo.svg",
+  "logoSm": "BASE_URL/images/gamma/logo-sm.svg",
   "chains": [
     {
       "chainId": 42161,
