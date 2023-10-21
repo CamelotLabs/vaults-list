@@ -5,7 +5,7 @@
   "chains": [
     {
       "chainId": 42161,
-      "api": "https://api.defiedge.io/graphql",
+      "api": "https://camelot-api.defiedge.io/arbitrum/details",
       "depositProxy": "0xc4eb9fff53581130e65E3B60b31295C52509C11F",
       "depositProxyAbi": "BASE_URL/abi/defiedge/defiedgeproxyhelper.json",
       "strategies": [
