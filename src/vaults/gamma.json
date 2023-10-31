@@ -217,6 +217,50 @@
           "image": "BASE_URL/assets/gamma/strategy-narrow.svg",
           "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/flr-usdc.e-narrow",
           "description": "The narrow-range strategy will tend to earn more in fees and rewards, but may potentially incur greater losses in a highly volatile market. Narrow range strategies tend to do well when there is less volatility or when there are high fees and rewards."
+        },
+        {
+          "symbol": "WBTC-ETH",
+          "strategy": "Narrow",
+          "fullname": "Gamma Narrow WBTC-ETH",
+          "address": "0x56c87c3892d3917895bAe1A4cAcf6ea23a4DB84d",
+          "poolAddress": "0xd845f7D4f4DeB9Ff5bCf09D140Ef13718F6f6C71",
+          "abi": "BASE_URL/abi/gamma/gammavault.json",
+          "image": "BASE_URL/assets/gamma/strategy-narrow.svg",
+          "url": "https://app.gamma.xyz/vault/camelot/arbitrum",
+          "description": "The narrow-range strategy will tend to earn more in fees and rewards, but may potentially incur greater losses in a highly volatile market. Narrow range strategies tend to do well when there is less volatility or when there are high fees and rewards."
+        },
+        {
+          "symbol": "USDT-USDC.e",
+          "strategy": "Stable",
+          "fullname": "Gamma Stable USDT-USDC.e",
+          "address": "0x61A7b3dae70D943C6f2eA9ba4FfD2fEcc6AF15E4",
+          "poolAddress": "0x3AB5DD69950a948c55D1FBFb7500BF92B4Bd4C48",
+          "abi": "BASE_URL/abi/gamma/gammavault.json",
+          "image": "BASE_URL/assets/gamma/strategy-stable.svg",
+          "url": "https://app.gamma.xyz/vault/camelot/arbitrum",
+          "description": "Liquidity ranges are aimed to straddle 1 at various ranges depending on backtesting results.  For more volatile stablecoin pairs, wider ranges will be used, and for blue-chip stables, narrower ranges will be used."
+        },
+        {
+          "symbol": "DAI-USDC",
+          "strategy": "Narrow",
+          "fullname": "Gamma Stable DAI-USDC",
+          "address": "0x2766Ba1B6772d23E1F58260a1dF57bFFB4661953",
+          "poolAddress": "0x45FaE8D0D2acE73544baab452f9020925AfCCC75",
+          "abi": "BASE_URL/abi/gamma/gammavault.json",
+          "image": "BASE_URL/assets/gamma/strategy-stable.svg",
+          "url": "https://app.gamma.xyz/vault/camelot/arbitrum",
+          "description": "Liquidity ranges are aimed to straddle 1 at various ranges depending on backtesting results.  For more volatile stablecoin pairs, wider ranges will be used, and for blue-chip stables, narrower ranges will be used."
+        },
+        {
+          "symbol": "GMX-ETH",
+          "strategy": "Narrow",
+          "fullname": "Gamma Narrow GMX-ETH",
+          "address": "0x9bdb8335619bA4E20Bea1321f8E32f45fD6e6e22",
+          "poolAddress": "0xC99be44383BC8d82357F5A1D9ae9976EE9d75bee",
+          "abi": "BASE_URL/abi/gamma/gammavault.json",
+          "image": "BASE_URL/assets/gamma/strategy-narrow.svg",
+          "url": "https://app.gamma.xyz/vault/camelot/arbitrum",
+          "description": "The narrow-range strategy will tend to earn more in fees and rewards, but may potentially incur greater losses in a highly volatile market. Narrow range strategies tend to do well when there is less volatility or when there are high fees and rewards."
         }
       ]
     }
