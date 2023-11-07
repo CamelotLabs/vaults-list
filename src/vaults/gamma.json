@@ -448,6 +448,17 @@
           "image": "BASE_URL/assets/gamma/strategy-narrow.svg",
           "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/silo-weth-narrow",
           "description": "The narrow-range strategy will tend to earn more in fees and rewards, but may potentially incur greater losses in a highly volatile market. Narrow range strategies tend to do well when there is less volatility or when there are high fees and rewards."
+        },
+        {
+          "symbol": "MCB-USDC",
+          "strategy": "Narrow",
+          "fullname": "Gamma Narrow MCB-USDC",
+          "address": "0x4d8b720f4625E083a313d13267A8b5e2F186e7a9",
+          "poolAddress": "0x9C9b3D48c813f253a8FE4D7804c127d7308C1c14",
+          "abi": "BASE_URL/abi/gamma/gammavault.json",
+          "image": "BASE_URL/assets/gamma/strategy-narrow.svg",
+          "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/mcb-usdc-narrow",
+          "description": "The narrow-range strategy will tend to earn more in fees and rewards, but may potentially incur greater losses in a highly volatile market. Narrow range strategies tend to do well when there is less volatility or when there are high fees and rewards."
         }
       ]
     }
