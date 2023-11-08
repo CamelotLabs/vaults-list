@@ -459,6 +459,39 @@
           "image": "BASE_URL/assets/gamma/strategy-narrow.svg",
           "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/mcb-usdc-narrow",
           "description": "The narrow-range strategy will tend to earn more in fees and rewards, but may potentially incur greater losses in a highly volatile market. Narrow range strategies tend to do well when there is less volatility or when there are high fees and rewards."
+        },
+        {
+          "symbol": "stEUR-USDC",
+          "strategy": "Pegged",
+          "fullname": "Gamma Pegged Price stEUR-USDC",
+          "address": "0x95fe2EC2C1797cae5210AbD9cc9f061d5bD1583e",
+          "poolAddress": "0xCC4E4c18bAd7E1cC63Bb98915eEb3f412939955E",
+          "abi": "BASE_URL/abi/gamma/gammavault.json",
+          "image": "BASE_URL/assets/gamma/strategy-wide.svg",
+          "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/steur-usdc-pegged-price",
+          "description": "Liquidity is provided directly around the net asset value of a provided asset. For example, a wrapped, staked ETH derivative asset will be provided only within a fixed range around its net asset value."
+        },
+        {
+          "symbol": "stEUR-wstETH",
+          "strategy": "Narrow",
+          "fullname": "Gamma Narrow stEUR-wstETH",
+          "address": "0xCA645ebB51D36d55EbC1211D3a229d80251d3977",
+          "poolAddress": "0x6C41A770583Fc7141FBeA9ac741f9015A4De6FDa",
+          "abi": "BASE_URL/abi/gamma/gammavault.json",
+          "image": "BASE_URL/assets/gamma/strategy-narrow.svg",
+          "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/steur-wsteth-narrow",
+          "description": "The narrow-range strategy will tend to earn more in fees and rewards, but may potentially incur greater losses in a highly volatile market. Narrow range strategies tend to do well when there is less volatility or when there are high fees and rewards."
+        },
+        {
+          "symbol": "stEUR-ARB",
+          "strategy": "Narrow",
+          "fullname": "Gamma Narrow stEUR-wstETH",
+          "address": "0xe7FB2aafc4C3AD3826FEB40EF0b03a6eca39c481",
+          "poolAddress": "0xcAE4a98685fD488e8D2fC3780BAABC7d472f9D01",
+          "abi": "BASE_URL/abi/gamma/gammavault.json",
+          "image": "BASE_URL/assets/gamma/strategy-narrow.svg",
+          "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/steur-arb-narrow",
+          "description": "The narrow-range strategy will tend to earn more in fees and rewards, but may potentially incur greater losses in a highly volatile market. Narrow range strategies tend to do well when there is less volatility or when there are high fees and rewards."
         }
       ]
     }
