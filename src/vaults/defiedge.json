@@ -107,6 +107,17 @@
           "image": "BASE_URL/assets/defiedge/strategy-alo.svg",
           "url": "https://camelot.defiedge.io/s/arbitrum/0x6f72aa5e1b42f0d091ba6c2b9fe3e326a3df6160",
           "description": "Optimize your liquidity management with DeFiEdge's Automated Liquidity Optimization (ALO) solution. Designed to manage both narrow and wide ranges within a single strategy. ALO dynamically allocates liquidity in response to market volatility and fluctuations, aiming for consistent returns and reduced impermanent loss."
+        },
+        {
+          "symbol": "DPX-WETH",
+          "strategy": "ALO",
+          "fullname": "DefiEdge DPX-WETH",
+          "address": "0xbbbb8507d7f4ac87de825848d163f7a76048a4e3",
+          "poolAddress": "0x59a327d948db1810324a04d69cbe9fe9884f8f28",
+          "abi": "BASE_URL/abi/defiedge/defiedgevault.json",
+          "image": "BASE_URL/assets/defiedge/strategy-alo.svg",
+          "url": "https://camelot.defiedge.io/s/arbitrum/0xbbbb8507d7f4ac87de825848d163f7a76048a4e3",
+          "description": "Optimize your liquidity management with DeFiEdge's Automated Liquidity Optimization (ALO) solution. Designed to manage both narrow and wide ranges within a single strategy. ALO dynamically allocates liquidity in response to market volatility and fluctuations, aiming for consistent returns and reduced impermanent loss."
         }
       ]
     }
