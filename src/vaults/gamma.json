@@ -607,7 +607,7 @@
           "symbol": "plsDPX-DPX",
           "strategy": "Narrow",
           "fullname": "Gamma Narrow plsDPX-DPX",
-          "address": "0x3187a793b44e0173d5f8090795af34f023f83131",
+          "address": "0x3187a793B44E0173D5F8090795aF34F023F83131",
           "poolAddress": "0x2F0bCb4a8bd714953eeFD5339326eE0Ff62C5b62",
           "abi": "BASE_URL/abi/gamma/gammavault.json",
           "image": "BASE_URL/assets/gamma/strategy-stable.svg",

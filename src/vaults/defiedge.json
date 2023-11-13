@@ -109,9 +109,9 @@
           "description": "Optimize your liquidity management with DeFiEdge's Automated Liquidity Optimization (ALO) solution. Designed to manage both narrow and wide ranges within a single strategy. ALO dynamically allocates liquidity in response to market volatility and fluctuations, aiming for consistent returns and reduced impermanent loss."
         },
         {
-          "symbol": "DPX-WETH",
+          "symbol": "DPX-ETH",
           "strategy": "ALO",
-          "fullname": "DefiEdge DPX-WETH",
+          "fullname": "DefiEdge DPX-ETH",
           "address": "0xBbbB8507d7F4Ac87DE825848D163F7A76048a4E3",
           "poolAddress": "0x59A327d948db1810324a04D69CBe9fe9884F8F28",
           "abi": "BASE_URL/abi/defiedge/defiedgevault.json",
