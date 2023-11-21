@@ -613,6 +613,28 @@
           "image": "BASE_URL/assets/gamma/strategy-stable.svg",
           "url": "https://app.gamma.xyz/vault/camelot/arbitrum/",
           "description": "Liquidity ranges are aimed to straddle 1 at various ranges depending on backtesting results.  For more volatile stablecoin pairs, wider ranges will be used, and for blue-chip stables, narrower ranges will be used."
+        },
+        {
+          "symbol": "ETH-jUSDC",
+          "strategy": "Wide",
+          "fullname": "Gamma Wide ETH-jUSDC",
+          "address": "0x6222E32f7e32d8b61955019e5392Ca919516eBA5",
+          "poolAddress": "0x563d5Bd3512d36d1A427405f809F4b18dC8F66CF",
+          "abi": "BASE_URL/abi/gamma/gammavault.json",
+          "image": "BASE_URL/assets/gamma/strategy-wide.svg",
+          "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/weth-jusdc-wide",
+          "description": "The wide-range strategy will tend to earn less in fees and rewards, but may suffer less impermanent loss in a volatile environment. So while it may have less earning potential, it is likely to suffer less drawdowns."
+        },
+        {
+          "symbol": "jGLP-USDC.e",
+          "strategy": "Wide",
+          "fullname": "Gamma Wide jGLP-USDC.e",
+          "address": "0xdf2ea37D82FEB483813Ff49961b1B78d6e2E8a5A",
+          "poolAddress": "0x2CFE57fB80Fa7C00b0851F11a07FF173f9D990A3",
+          "abi": "BASE_URL/abi/gamma/gammavault.json",
+          "image": "BASE_URL/assets/gamma/strategy-wide.svg",
+          "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/jglp-usdc.e-wide",
+          "description": "The wide-range strategy will tend to earn less in fees and rewards, but may suffer less impermanent loss in a volatile environment. So while it may have less earning potential, it is likely to suffer less drawdowns."
         }
       ]
     }
