@@ -639,7 +639,7 @@
         {
           "symbol": "MIM-ARB",
           "strategy": "Narrow",
-          "fullname": "Gamma Narrow jGLP-USDC.e",
+          "fullname": "Gamma Narrow MIM-ARB",
           "address": "0x1164191754F726edB85466F84aE5f14f43C111a9",
           "poolAddress": "0xb4E0a7698c7cfB03508787C80647419364CcB8D0",
           "abi": "BASE_URL/abi/gamma/gammavault.json",
