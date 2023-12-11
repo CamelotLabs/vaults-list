@@ -657,6 +657,17 @@
           "image": "BASE_URL/assets/gamma/strategy-narrow.svg",
           "url": "https://app.gamma.xyz/vault/camelot/arbitrum/",
           "description": "The wide-range strategy will tend to earn less in fees and rewards, but may suffer less impermanent loss in a volatile environment. So while it may have less earning potential, it is likely to suffer less drawdowns."
+        },
+        {
+          "symbol": "FCTR-USDC",
+          "strategy": "Wide",
+          "fullname": "Gamma Wide FCTR-USDC",
+          "address": "0xB0d36B93Fae34b2a62B1C8Fc56CdcF95D3f5304A",
+          "poolAddress": "0xc39D8c1F4e09133738A3f97C63C7E3300035d2bD",
+          "abi": "BASE_URL/abi/gamma/gammavault.json",
+          "image": "BASE_URL/assets/gamma/strategy-wide.svg",
+          "url": "https://app.gamma.xyz/vault/camelot/arbitrum/",
+          "description": "The wide-range strategy will tend to earn less in fees and rewards, but may suffer less impermanent loss in a volatile environment. So while it may have less earning potential, it is likely to suffer less drawdowns."
         }
       ]
     }
