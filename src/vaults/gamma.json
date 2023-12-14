@@ -690,6 +690,17 @@
           "image": "BASE_URL/assets/gamma/strategy-narrow.svg",
           "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/good-usdc.e-narrow",
           "description": "The narrow-range strategy will tend to earn more in fees and rewards, but may potentially incur greater losses in a highly volatile market. Narrow range strategies tend to do well when there is less volatility or when there are high fees and rewards."
+        },
+        {
+          "symbol": "axlUSDC-USDC",
+          "strategy": "Pegged",
+          "fullname": "Gamma Pegged Price axlUSDC-USDC",
+          "address": "0xC4De6d8af8Ca8A17d6740eD105De43b32b1D993d",
+          "poolAddress": "0x83F210dDa8D968094a8ea2a27E2A16D2b364c78A",
+          "abi": "BASE_URL/abi/gamma/gammavault.json",
+          "image": "BASE_URL/assets/gamma/strategy-pegged-price.svg",
+          "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/axlusdc-usdc-pegged-price",
+          "description": "Liquidity is provided directly around the net asset value of a provided asset. For example, a wrapped, staked ETH derivative asset will be provided only within a fixed range around its net asset value."
         }
       ]
     }
