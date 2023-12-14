@@ -679,6 +679,17 @@
           "image": "BASE_URL/assets/gamma/strategy-narrow.svg",
           "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/vrtx-usdc-narrow",
           "description": "The narrow-range strategy will tend to earn more in fees and rewards, but may potentially incur greater losses in a highly volatile market. Narrow range strategies tend to do well when there is less volatility or when there are high fees and rewards."
+        },
+        {
+          "symbol": "GOOD-USDC.e",
+          "strategy": "Narrow",
+          "fullname": "Gamma Narrow GOOD-USDC.e",
+          "address": "0x335C83471cCaB2A8508fafD6637c53C5362B9Cd0",
+          "poolAddress": "0xc4f131f9267831Fd83C88CC6772c37BC51c697Ad",
+          "abi": "BASE_URL/abi/gamma/gammavault.json",
+          "image": "BASE_URL/assets/gamma/strategy-narrow.svg",
+          "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/good-usdc.e-narrow",
+          "description": "The narrow-range strategy will tend to earn more in fees and rewards, but may potentially incur greater losses in a highly volatile market. Narrow range strategies tend to do well when there is less volatility or when there are high fees and rewards."
         }
       ]
     }
