@@ -693,14 +693,14 @@
         },
         {
           "symbol": "axlUSDC-USDC",
-          "strategy": "Pegged",
-          "fullname": "Gamma Pegged Price axlUSDC-USDC",
+          "strategy": "Stable",
+          "fullname": "Gamma Stable axlUSDC-USDC",
           "address": "0xC4De6d8af8Ca8A17d6740eD105De43b32b1D993d",
           "poolAddress": "0x83F210dDa8D968094a8ea2a27E2A16D2b364c78A",
           "abi": "BASE_URL/abi/gamma/gammavault.json",
-          "image": "BASE_URL/assets/gamma/strategy-pegged-price.svg",
-          "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/axlusdc-usdc-pegged-price",
-          "description": "Liquidity is provided directly around the net asset value of a provided asset. For example, a wrapped, staked ETH derivative asset will be provided only within a fixed range around its net asset value."
+          "image": "BASE_URL/assets/gamma/strategy-stable.svg",
+          "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/plsarb-arb-stable",
+          "description": "Liquidity ranges are aimed to straddle 1 at various ranges depending on backtesting results.  For more volatile stablecoin pairs, wider ranges will be used, and for blue-chip stables, narrower ranges will be used."
         },
         {
           "symbol": "AXL-USDC",
