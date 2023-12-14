@@ -701,6 +701,17 @@
           "image": "BASE_URL/assets/gamma/strategy-pegged-price.svg",
           "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/axlusdc-usdc-pegged-price",
           "description": "Liquidity is provided directly around the net asset value of a provided asset. For example, a wrapped, staked ETH derivative asset will be provided only within a fixed range around its net asset value."
+        },
+        {
+          "symbol": "AXL-USDC",
+          "strategy": "Narrow",
+          "fullname": "Gamma Narrow AXL-USDC",
+          "address": "0x03aadB89CD14cDB53883D0068346F22c9585D9C4",
+          "poolAddress": "0x070342A4B13289FF54881f2068b46b5Fcc7D29cD",
+          "abi": "BASE_URL/abi/gamma/gammavault.json",
+          "image": "BASE_URL/assets/gamma/strategy-narrow.svg",
+          "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/axl-usdc-narrow",
+          "description": "The narrow-range strategy will tend to earn more in fees and rewards, but may potentially incur greater losses in a highly volatile market. Narrow range strategies tend to do well when there is less volatility or when there are high fees and rewards."
         }
       ]
     }
