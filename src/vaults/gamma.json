@@ -668,6 +668,17 @@
           "image": "BASE_URL/assets/gamma/strategy-wide.svg",
           "url": "https://app.gamma.xyz/vault/camelot/arbitrum/",
           "description": "The wide-range strategy will tend to earn less in fees and rewards, but may suffer less impermanent loss in a volatile environment. So while it may have less earning potential, it is likely to suffer less drawdowns."
+        },
+        {
+          "symbol": "VRTX-USDC",
+          "strategy": "Narrow",
+          "fullname": "Gamma Narrow VRTX-USDC",
+          "address": "0xe79372260b6C1384d09c44026e65216969aC4b31",
+          "poolAddress": "0x3Cf4Cb6Ce8CF3b147E6c444CF66526F5F0c16B92",
+          "abi": "BASE_URL/abi/gamma/gammavault.json",
+          "image": "BASE_URL/assets/gamma/strategy-narrow.svg",
+          "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/vrtx-usdc-narrow",
+          "description": "The narrow-range strategy will tend to earn more in fees and rewards, but may potentially incur greater losses in a highly volatile market. Narrow range strategies tend to do well when there is less volatility or when there are high fees and rewards."
         }
       ]
     }
