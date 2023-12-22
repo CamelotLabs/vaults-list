@@ -118,6 +118,45 @@
           "image": "BASE_URL/assets/defiedge/strategy-alo.svg",
           "url": "https://camelot.defiedge.io/s/arbitrum/0xBbbB8507d7F4Ac87DE825848D163F7A76048a4E3",
           "description": "Optimize your liquidity management with DeFiEdge's Automated Liquidity Optimization (ALO) solution. Designed to manage both narrow and wide ranges within a single strategy. ALO dynamically allocates liquidity in response to market volatility and fluctuations, aiming for consistent returns and reduced impermanent loss."
+        },
+        {
+          "symbol": "ETH-USDC",
+          "strategy": "Smart LP",
+          "fullname": "Smart LP ETH-USDC",
+          "address": "0xDB1EC4538569aa6600Ea86Dbda14AF187AD9942E",
+          "poolAddress": "0xB1026b8e7276e7AC75410F1fcbbe21796e8f7526",
+          "abi": "BASE_URL/abi/defiedge/defiedgevault.json",
+          "customLogo": "BASE_URL/assets/defiedge/logo-smartlp.png",
+          "customLogoSm": "BASE_URL/assets/defiedge/logo-sm-smartlp.svg",
+          "image": "BASE_URL/assets/defiedge/strategy-smartlp.svg",
+          "url": "https://app.jonesdao.io/labs/0xDB1EC4538569aa6600Ea86Dbda14AF187AD9942E",
+          "description": "Smart LP automatically compounds & rebalances V3-style LP positions. These strategies aim to find the right balance between maximized yield and keeping the pair in the chosen range. As such, rebalances range accordingly to parameters such as time & volatility."
+        },
+        {
+          "symbol": "GRAIL-USDC.e",
+          "strategy": "Smart LP ",
+          "fullname": "Smart LP GRAIL-USDC.e",
+          "address": "0x8a7423F47D98bc122100C55abbB1E4107E9876Af",
+          "poolAddress": "0x8cc8093218bCaC8B1896A1EED4D925F6F6aB289F",
+          "abi": "BASE_URL/abi/defiedge/defiedgevault.json",
+          "customLogo": "BASE_URL/assets/defiedge/logo-smartlp.png",
+          "customLogoSm": "BASE_URL/assets/defiedge/logo-sm-smartlp.svg",
+          "image": "BASE_URL/assets/defiedge/strategy-smartlp.svg",
+          "url": "https://app.jonesdao.io/labs/0x8a7423F47D98bc122100C55abbB1E4107E9876Af",
+          "description": "Smart LP automatically compounds & rebalances V3-style LP positions. These strategies aim to find the right balance between maximized yield and keeping the pair in the chosen range. As such, rebalances range accordingly to parameters such as time & volatility."
+        },
+        {
+          "symbol": "ETH-ARB",
+          "strategy": "Smart LP",
+          "fullname": "Smart LP ETH-ARB",
+          "address": "0xa6Da7d01D33a05770461bB416b968C37928d97f4",
+          "poolAddress": "0xe51635ae8136aBAc44906A8f230C2D235E9c195F",
+          "abi": "BASE_URL/abi/defiedge/defiedgevault.json",
+          "customLogo": "BASE_URL/assets/defiedge/logo-smartlp.png",
+          "customLogoSm": "BASE_URL/assets/defiedge/logo-sm-smartlp.svg",
+          "image": "BASE_URL/assets/defiedge/strategy-smartlp.svg",
+          "url": "https://app.jonesdao.io/labs/0xa6Da7d01D33a05770461bB416b968C37928d97f4",
+          "description": "Smart LP automatically compounds & rebalances V3-style LP positions. These strategies aim to find the right balance between maximized yield and keeping the pair in the chosen range. As such, rebalances range accordingly to parameters such as time & volatility."
         }
       ]
     }

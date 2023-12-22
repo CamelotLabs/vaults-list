@@ -57,6 +57,18 @@
           "format": "uri-template",
           "examples": ["https://vaults-list.camelot.exchange/images/gamma/narrow.svg"]
         },
+        "customLogo": {
+          "type": "string",
+          "description": "(optional) A URI to override the alm logo; suggest png",
+          "format": "uri-template",
+          "examples": ["https://vaults-list.camelot.exchange/images/gamma/logo.png"]
+        },
+        "customLogoSm": {
+          "type": "string",
+          "description": "(optional) A URI to override the alm logo-sm; suggest SVG",
+          "format": "uri-template",
+          "examples": ["https://vaults-list.camelot.exchange/images/gamma/logo-sm.svg"]
+        },
         "url": {
           "type": "string",
           "description": "A URI to the strategy page on the ALM app",
