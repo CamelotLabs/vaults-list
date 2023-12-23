@@ -1,11 +1,12 @@
 require('dotenv').config()
 const defiedge = require("./vaults/defiedge.json");
 const gamma = require("./vaults/gamma.json");
+const jones = require("./vaults/jones.json");
 
 const BASE_URL = process.env.BASE_URL || "https://vaults-list.camelot.exchange"
 
 module.exports = function buildList() {
-    const vaults = [defiedge, gamma]
+    const vaults = [defiedge, gamma, jones]
     const processedVaults = JSON.parse(JSON.stringify(vaults).replace(/BASE_URL/g, BASE_URL))
 
     return {
