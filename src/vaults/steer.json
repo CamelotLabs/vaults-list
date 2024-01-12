@@ -1,0 +1,37 @@
+{
+  "name": "Steer",
+  "logo": "BASE_URL/assets/steer/logo.png",
+  "logoSm": "BASE_URL/assets/steer/logo-sm.svg",
+  "chains": [
+    {
+      "chainId": 42161,
+      "api": "https://ro81h8hq6b.execute-api.us-east-1.amazonaws.com/camelot/vaults",
+      "depositProxy": "0x5864962AE89B700F44E0552930da9455DA3B25F2",
+      "depositProxyAbi": "BASE_URL/abi/steer/steerproxyhelper.json",
+      "strategies": [
+        {
+          "symbol": "ARB-USDC",
+          "strategy": "MVC",
+          "fullname": "Moving Volatility Channel ARB-USDC",
+          "address": "0x11290316a4dc61C89c0Fa082Dd272744f656fb49",
+          "poolAddress": "0xfaE2AE0a9f87FD35b5b0E24B47BAC796A7EEfEa1",
+          "abi": "BASE_URL/abi/steer/steervault.json",
+          "image": "BASE_URL/assets/steer/mvc.svg",
+          "url": "https://app.steer.finance/vault/0x11290316a4dc61c89c0fa082dd272744f656fb49",
+          "description": "The Moving Volatility Channel Strategy harnesses the power of the Keltner Channel to monitor asset price volatility and trend direction. By setting boundaries based on average true ranges and moving averages, this strategy provides a responsive channel that adjusts to the asset's price fluctuations. Ideal for LPs who wish to optimize their positions in a dynamic market, it facilitates the identification of potential breakout or consolidation phases, ensuring you're always aligned with the market's rhythm."
+        },
+        {
+          "symbol": "USDC-USDC.e",
+          "strategy": "GSS",
+          "fullname": "Generic Static Stable ARB-USDC",
+          "address": "0xe5a04695c017558e071494cc547ab4c3fc990dba",
+          "poolAddress": "0xc86eb7b85807020b4548ee05b54bfc956eebbfcd",
+          "abi": "BASE_URL/abi/steer/steervault.json",
+          "image": "BASE_URL/assets/steer/mvc.svg",
+          "url": "https://app.steer.finance/vault/0x11290316a4dc61c89c0fa082dd272744f656fb49",
+          "description": "Static stable strategies are designed for assets pegged at a theoretical price. Various widths and depths can be achieved to give users the desired liquidity shape while market making. These strategies are incredibly safe and resistant to IL given their nature."
+        }
+      ]
+    }
+  ]
+}
