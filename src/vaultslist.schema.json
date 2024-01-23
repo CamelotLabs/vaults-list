@@ -79,7 +79,7 @@
           "type": "string",
           "description": "A short description of the strategy",
           "minLength": 32,
-          "maxLength": 512
+          "maxLength": 600
         }
       },
       "required": ["symbol", "strategy", "fullname", "address", "poolAddress", "abi", "image", "url", "description"]
