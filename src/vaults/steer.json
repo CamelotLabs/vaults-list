@@ -12,7 +12,7 @@
         {
           "symbol": "ARB-USDC",
           "strategy": "MVCS",
-          "fullname": "Moving Volatility Channel ARB/USDC",
+          "fullname": "Moving Volatility Channel ARB-USDC",
           "address": "0x11290316a4dc61C89c0Fa082Dd272744f656fb49",
           "poolAddress": "0xfaE2AE0a9f87FD35b5b0E24B47BAC796A7EEfEa1",
           "abi": "BASE_URL/abi/steer/steervault.json",
@@ -23,7 +23,7 @@
         {
           "symbol": "ARB-USDC",
           "strategy": "CRSV",
-          "fullname": "Classic Rebalance ARB/USDC",
+          "fullname": "Classic Rebalance ARB-USDC",
           "address": "0x127e3Ee25DfD74D2e03559bb29356eAF3186c931",
           "poolAddress": "0xfaE2AE0a9f87FD35b5b0E24B47BAC796A7EEfEa1",
           "abi": "BASE_URL/abi/steer/steervault.json",
@@ -34,7 +34,7 @@
         {
           "symbol": "WBTC-svBTC",
           "strategy": "GSSS",
-          "fullname": "Generic Static Stable WBTC/svBTC",
+          "fullname": "Generic Static Stable WBTC-svBTC",
           "address": "0x19bDb97b8e57534eFE410A3bB8E73C980F4c30bF",
           "poolAddress": "0xA27cb8a8ACf2DE50f3174cb68ec0bD3180D53921",
           "abi": "BASE_URL/abi/steer/steervault.json",
@@ -45,7 +45,7 @@
         {
           "symbol": "MAGIC-WETH",
           "strategy": "CRSV",
-          "fullname": "Classic Rebalance MAGIC/WETH",
+          "fullname": "Classic Rebalance MAGIC-WETH",
           "address": "0x1A18770DE331D56F121EdBf92D5809A5bE1471A0",
           "poolAddress": "0x1106dB7165A8d4a8559B441eCdEe14a5d5070DbC",
           "abi": "BASE_URL/abi/steer/steervault.json",
@@ -56,7 +56,7 @@
         {
           "symbol": "WETH-ARB",
           "strategy": "HLCS",
-          "fullname": "High Low Channel WETH/ARB",
+          "fullname": "High Low Channel WETH-ARB",
           "address": "0x1AB39C875e00eF63758c571C3f6292C3D94dDD28",
           "poolAddress": "0xe51635ae8136aBAc44906A8f230C2D235E9c195F",
           "abi": "BASE_URL/abi/steer/steervault.json",
@@ -67,7 +67,7 @@
         {
           "symbol": "WINR-USDC",
           "strategy": "HLCS",
-          "fullname": "High Low Channel WINR/USDC",
+          "fullname": "High Low Channel WINR-USDC",
           "address": "0x1Ac72fDdf41397FdA7845b03199DF62e113D8D44",
           "poolAddress": "0xc35AA1cEc34E02A8acc3E5f79c22BE364823094c",
           "abi": "BASE_URL/abi/steer/steervault.json",
@@ -78,7 +78,7 @@
         {
           "symbol": "WETH-LINK",
           "strategy": "EES",
-          "fullname": "Elastic Expansion WETH/LINK",
+          "fullname": "Elastic Expansion WETH-LINK",
           "address": "0x1dF9A6Cb4f0148e7041aAfabf102Dd12BC5E8F3a",
           "poolAddress": "0xe8795cF9c2309eCfe05Df028eB0F21D5D6e3a951",
           "abi": "BASE_URL/abi/steer/steervault.json",
@@ -89,7 +89,7 @@
         {
           "symbol": "LUSD-USDC",
           "strategy": "GSSS",
-          "fullname": "Generic Static Stable LUSD/USDC",
+          "fullname": "Generic Static Stable LUSD-USDC",
           "address": "0x33500181093086c26F581E9D835f5B6CE829Cc26",
           "poolAddress": "0x3d7412e255c04239285cAd57f82220D07D6874B0",
           "abi": "BASE_URL/abi/steer/steervault.json",
@@ -100,7 +100,7 @@
         {
           "symbol": "USDC-MIM",
           "strategy": "MSS",
-          "fullname": "MIM-USDC Stable USDC/MIM",
+          "fullname": "MIM-USDC Stable USDC-MIM",
           "address": "0x38B44bB001456091bfac7b0E3eBeaBfC7DA6E626",
           "poolAddress": "0x0e7AC13617Cc1A289B222E4602BdAaA53ea4dc61",
           "abi": "BASE_URL/abi/steer/steervault.json",
@@ -111,7 +111,7 @@
         {
           "symbol": "DPX-WETH",
           "strategy": "CRSV",
-          "fullname": "Classic Rebalance DPX/WETH",
+          "fullname": "Classic Rebalance DPX-WETH",
           "address": "0x3d30d2a197a7F4738cED55d269c5C37F267bb136",
           "poolAddress": "0x59A327d948db1810324a04D69CBe9fe9884F8F28",
           "abi": "BASE_URL/abi/steer/steervault.json",
@@ -122,7 +122,7 @@
         {
           "symbol": "PENDLE-WETH",
           "strategy": "CRSV",
-          "fullname": "Classic Rebalance PENDLE/WETH",
+          "fullname": "Classic Rebalance PENDLE-WETH",
           "address": "0x5e5b8B96F09c372a7D216e268bB89170CeCd6b9B",
           "poolAddress": "0xE461f84C3fE6BCDd1162Eb0Ef4284F3bB6e4CAD3",
           "abi": "BASE_URL/abi/steer/steervault.json",
@@ -133,7 +133,7 @@
         {
           "symbol": "USDC-DAI",
           "strategy": "GSSS",
-          "fullname": "Generic Static Stable USDC/DAI",
+          "fullname": "Generic Static Stable USDC-DAI",
           "address": "0x5f033d4d786eC5592FDbb5B289000A2B9A466D32",
           "poolAddress": "0x45FaE8D0D2acE73544baab452f9020925AfCCC75",
           "abi": "BASE_URL/abi/steer/steervault.json",
@@ -144,7 +144,7 @@
         {
           "symbol": "WETH-USDC",
           "strategy": "EES",
-          "fullname": "Elastic Expansion WETH/USDC",
+          "fullname": "Elastic Expansion WETH-USDC",
           "address": "0x801B4184de0CDF298ce933b042911500FADA1de6",
           "poolAddress": "0xB1026b8e7276e7AC75410F1fcbbe21796e8f7526",
           "abi": "BASE_URL/abi/steer/steervault.json",
@@ -155,7 +155,7 @@
         {
           "symbol": "WETH-GMX",
           "strategy": "EES",
-          "fullname": "Elastic Expansion WETH/GMX",
+          "fullname": "Elastic Expansion WETH-GMX",
           "address": "0x843a07b949820eaA8362d52d4b600f367C6D7312",
           "poolAddress": "0xC99be44383BC8d82357F5A1D9ae9976EE9d75bee",
           "abi": "BASE_URL/abi/steer/steervault.json",
@@ -166,7 +166,7 @@
         {
           "symbol": "RDNT-WETH",
           "strategy": "HLCS",
-          "fullname": "High Low Channel RDNT/WETH",
+          "fullname": "High Low Channel RDNT-WETH",
           "address": "0x974c148d09d6E6d00A7aB4680DbDaF7bEAAf2be5",
           "poolAddress": "0xD51F7383C906cfD995d7f24729F37933Ff264Fa6",
           "abi": "BASE_URL/abi/steer/steervault.json",
@@ -177,7 +177,7 @@
         {
           "symbol": "stEUR-wstETH",
           "strategy": "CRSV",
-          "fullname": "Classic Rebalance V2 stEUR/wstETH",
+          "fullname": "Classic Rebalance V2 stEUR-wstETH",
           "address": "0x97c7605AF1cf301D440EB9Aff359C4d80Fe1d430",
           "poolAddress": "0x6C41A770583Fc7141FBeA9ac741f9015A4De6FDa",
           "abi": "BASE_URL/abi/steer/steervault.json",
@@ -188,7 +188,7 @@
         {
           "symbol": "GRAIL-USDC",
           "strategy": "HLCS",
-          "fullname": "High Low Channel GRAIL/USDC",
+          "fullname": "High Low Channel GRAIL-USDC",
           "address": "0x980694538542CdB70C2F791f6d406a5E89EE6FaA",
           "poolAddress": "0x8cc8093218bCaC8B1896A1EED4D925F6F6aB289F",
           "abi": "BASE_URL/abi/steer/steervault.json",
@@ -199,7 +199,7 @@
         {
           "symbol": "VELA-WETH",
           "strategy": "HLCSV",
-          "fullname": "High Low Channel VELA/WETH",
+          "fullname": "High Low Channel VELA-WETH",
           "address": "0x9ad0e71AaD6deBEAB4f6131Bb75D53ACf74f8ed4",
           "poolAddress": "0x2d879f8A38648a05c2dba7DeE2A33d00F440e04B",
           "abi": "BASE_URL/abi/steer/steervault.json",
@@ -210,7 +210,7 @@
         {
           "symbol": "stEUR-ARB",
           "strategy": "MVCS",
-          "fullname": "Moving Volatility Channel stEUR/ARB",
+          "fullname": "Moving Volatility Channel stEUR-ARB",
           "address": "0xa02e191eFd6B1BaCc9a8e133c4B9580F46863254",
           "poolAddress": "0xcAE4a98685fD488e8D2fC3780BAABC7d472f9D01",
           "abi": "BASE_URL/abi/steer/steervault.json",
@@ -221,7 +221,7 @@
         {
           "symbol": "Silo-WETH",
           "strategy": "CRSV",
-          "fullname": "Classic Rebalance Silo/WETH",
+          "fullname": "Classic Rebalance Silo-WETH",
           "address": "0xAd5EDf3b5B6224A62Fe6Df7Fc2469F473509B207",
           "poolAddress": "0xc7349Af293747DdF3336A05e16355E6A10E35b7E",
           "abi": "BASE_URL/abi/steer/steervault.json",
@@ -232,7 +232,7 @@
         {
           "symbol": "stEUR-USDC",
           "strategy": "HLCS",
-          "fullname": "High Low Channel stEUR/USDC",
+          "fullname": "High Low Channel stEUR-USDC",
           "address": "0xaE3776AaDF76Cb25d63Cd059d9CA82dAFdF4840C",
           "poolAddress": "0xCC4E4c18bAd7E1cC63Bb98915eEb3f412939955E",
           "abi": "BASE_URL/abi/steer/steervault.json",
@@ -243,7 +243,7 @@
         {
           "symbol": "plsARB-ARB",
           "strategy": "CRSV",
-          "fullname": "Classic Rebalance plsARB/ARB",
+          "fullname": "Classic Rebalance plsARB-ARB",
           "address": "0xB67f53988103AF01E2AA7A67461D86893BC7ff26",
           "poolAddress": "0x47A52B2beE1a0cc9A34BB9EE34C357C054112c3E",
           "abi": "BASE_URL/abi/steer/steervault.json",
@@ -254,7 +254,7 @@
         {
           "symbol": "WETH-GMX",
           "strategy": "MVCS",
-          "fullname": "Moving Volatility Channel WETH/GMX",
+          "fullname": "Moving Volatility Channel WETH-GMX",
           "address": "0xb8732Ed168102E48A18C56745bb1c8d05d5b0a27",
           "poolAddress": "0xC99be44383BC8d82357F5A1D9ae9976EE9d75bee",
           "abi": "BASE_URL/abi/steer/steervault.json",
@@ -265,7 +265,7 @@
         {
           "symbol": "WETH-USDT",
           "strategy": "CRSV",
-          "fullname": "Classic Rebalance WETH/USDT",
+          "fullname": "Classic Rebalance WETH-USDT",
           "address": "0xC9296F25E907943E50a98e12a05c4672901d7bC2",
           "poolAddress": "0x7CcCBA38E2D959fe135e79AEBB57CCb27B128358",
           "abi": "BASE_URL/abi/steer/steervault.json",
@@ -276,7 +276,7 @@
         {
           "symbol": "WETH-USDT",
           "strategy": "EES",
-          "fullname": "Elastic Expansion WETH/USDT",
+          "fullname": "Elastic Expansion WETH-USDT",
           "address": "0xcF3BB5741fa421CbD961F4BD4E921b1D7BCF1Cb1",
           "poolAddress": "0x7CcCBA38E2D959fe135e79AEBB57CCb27B128358",
           "abi": "BASE_URL/abi/steer/steervault.json",
@@ -287,7 +287,7 @@
         {
           "symbol": "WBTC-WETH",
           "strategy": "HLCS",
-          "fullname": "High Low Channel WBTC/WETH",
+          "fullname": "High Low Channel WBTC-WETH",
           "address": "0xdA0E522FdA5245fA5AF9274790E8A519b6F25023",
           "poolAddress": "0xd845f7D4f4DeB9Ff5bCf09D140Ef13718F6f6C71",
           "abi": "BASE_URL/abi/steer/steervault.json",
@@ -298,7 +298,7 @@
         {
           "symbol": "USDC-USDC",
           "strategy": "GSSS",
-          "fullname": "Generic Static Stable USDC/USDC",
+          "fullname": "Generic Static Stable USDC-USDC",
           "address": "0xE5a04695c017558e071494Cc547ab4c3fc990DBa",
           "poolAddress": "0xc86Eb7B85807020b4548EE05B54bfC956eEbbfCD",
           "abi": "BASE_URL/abi/steer/steervault.json",
@@ -309,7 +309,7 @@
         {
           "symbol": "GRAIL-WETH",
           "strategy": "CRSV",
-          "fullname": "Classic Rebalance V2 GRAIL/WETH",
+          "fullname": "Classic Rebalance V2 GRAIL-WETH",
           "address": "0xEf8CbDEe27cC9fe2fC7EC2bBc840BECbf83f0c3c",
           "poolAddress": "0x60451B6aC55E3C5F0f3aeE31519670EcC62DC28f",
           "abi": "BASE_URL/abi/steer/steervault.json",
@@ -320,7 +320,7 @@
         {
           "symbol": "PLS-WETH",
           "strategy": "CRSV",
-          "fullname": "Classic Rebalance PLS/WETH",
+          "fullname": "Classic Rebalance PLS-WETH",
           "address": "0xf9a3AAF97631080103Ec451E4d1e093ED7e7ca6b",
           "poolAddress": "0x1FA5368CD1e6334D532447cb78b9090B59EceF66",
           "abi": "BASE_URL/abi/steer/steervault.json",
@@ -331,7 +331,7 @@
         {
           "symbol": "USDT-USDC",
           "strategy": "GSSS",
-          "fullname": "Generic Static Stable USDT/USDC",
+          "fullname": "Generic Static Stable USDT-USDC",
           "address": "0xfaCC26b61728Fc1930291e3c8Ff589e82a277A27",
           "poolAddress": "0x3AB5DD69950a948c55D1FBFb7500BF92B4Bd4C48",
           "abi": "BASE_URL/abi/steer/steervault.json",
