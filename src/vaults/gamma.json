@@ -822,6 +822,39 @@
           "image": "BASE_URL/assets/gamma/strategy-stable.svg",
           "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/usdc-usdt-stable",
           "description": "Liquidity ranges are aimed to straddle 1 at various ranges depending on backtesting results.  For more volatile stablecoin pairs, wider ranges will be used, and for blue-chip stables, narrower ranges will be used."
+        },
+        {
+          "symbol": "OPUL-USDC",
+          "strategy": "Wide",
+          "fullname": "Gamma Wide OPUL-USDC",
+          "address": "0xBB5336E2Ed57b9881c14735E9909c85Fca0ACE21",
+          "poolAddress": "0xDa36507865C676b489e35F1Fa97Dd7AEDF2ee8e3",
+          "abi": "BASE_URL/abi/gamma/gammavault.json",
+          "image": "BASE_URL/assets/gamma/strategy-wide.svg",
+          "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/opul-usdc-wide",
+          "description": "The wide-range strategy will tend to earn less in fees and rewards, but may suffer less impermanent loss in a volatile environment. So while it may have less earning potential, it is likely to suffer less drawdowns."
+        },
+        {
+          "symbol": "GG-ETH",
+          "strategy": "Wide",
+          "fullname": "Gamma Wide GG-ETH",
+          "address": "0x8360E265F31aA5A7ea79Ab10b75892d021bf718E",
+          "poolAddress": "0x6b4a958b6AC212cE35Fddfb57ef4fAe0A123ED0b",
+          "abi": "BASE_URL/abi/gamma/gammavault.json",
+          "image": "BASE_URL/assets/gamma/strategy-wide.svg",
+          "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/gg-weth-wide",
+          "description": "The wide-range strategy will tend to earn less in fees and rewards, but may suffer less impermanent loss in a volatile environment. So while it may have less earning potential, it is likely to suffer less drawdowns."
+        },
+        {
+          "symbol": "rsETH-ETH",
+          "strategy": "Pegged",
+          "fullname": "Gamma Pegged Price rsETH-ETH",
+          "address": "0xF00Bf7c33eE9106d10661F7ecF5efc73F4C911E1",
+          "poolAddress": "0xb355ccE5CBAF411bd56e3b092F5AA10A894083ae",
+          "abi": "BASE_URL/abi/gamma/gammavault.json",
+          "image": "BASE_URL/assets/gamma/strategy-narrow.svg",
+          "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/rseth-weth-pegged-price",
+          "description": "Liquidity is provided directly around the net asset value of a provided asset. For example, a wrapped, staked ETH derivative asset will be provided only within a fixed range around its net asset value."
         }
       ]
     }
