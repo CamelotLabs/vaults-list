@@ -395,17 +395,6 @@
           "description": "The narrow-range strategy will tend to earn more in fees and rewards, but may potentially incur greater losses in a highly volatile market. Narrow range strategies tend to do well when there is less volatility or when there are high fees and rewards."
         },
         {
-          "symbol": "DSQ-ETH",
-          "strategy": "Narrow",
-          "fullname": "Gamma Narrow DSQ-ETH",
-          "address": "0x4F417D80EfE1c261FF5dF89d6926692d6Ce3454B",
-          "poolAddress": "0x1B44844F479c089C75c89277961f5B1f71655C25",
-          "abi": "BASE_URL/abi/gamma/gammavault.json",
-          "image": "BASE_URL/assets/gamma/strategy-narrow.svg",
-          "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/weth-dsq-narrow",
-          "description": "The narrow-range strategy will tend to earn more in fees and rewards, but may potentially incur greater losses in a highly volatile market. Narrow range strategies tend to do well when there is less volatility or when there are high fees and rewards."
-        },
-        {
           "symbol": "SOL-USDC",
           "strategy": "Narrow",
           "fullname": "Gamma Narrow SOL-USDC",
