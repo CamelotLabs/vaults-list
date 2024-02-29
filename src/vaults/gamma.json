@@ -877,6 +877,17 @@
           "image": "BASE_URL/assets/gamma/strategy-wide.svg",
           "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/trade-usdt-wide",
           "description": "The wide-range strategy will tend to earn less in fees and rewards, but may suffer less impermanent loss in a volatile environment. So while it may have less earning potential, it is likely to suffer less drawdowns."
+        },
+        {
+          "symbol": "ezETH-ETH",
+          "strategy": "Pegged",
+          "fullname": "Gamma Pegged Price ezETH-ETH",
+          "address": "0xc0aeE8d1b04948f24beD717e92ec567521A24CDF",
+          "poolAddress": "0xaA45265A94C93802BE9511E426933239117E658f",
+          "abi": "BASE_URL/abi/gamma/gammavault.json",
+          "image": "BASE_URL/assets/gamma/strategy-pegged-price.svg",
+          "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/ezeth-weth-pegged-price",
+          "description": "Liquidity is provided directly around the net asset value of a provided asset. For example, a wrapped, staked ETH derivative asset will be provided only within a fixed range around its net asset value."
         }
       ]
     }
