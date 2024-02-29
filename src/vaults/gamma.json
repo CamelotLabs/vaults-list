@@ -866,6 +866,17 @@
           "image": "BASE_URL/assets/gamma/strategy-wide.svg",
           "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/d2-weth-wide",
           "description": "The wide-range strategy will tend to earn less in fees and rewards, but may suffer less impermanent loss in a volatile environment. So while it may have less earning potential, it is likely to suffer less drawdowns."
+        },
+        {
+          "symbol": "TRADE-USDT",
+          "strategy": "Wide",
+          "fullname": "Gamma Wide TRADE-USDT",
+          "address": "0xb033Cc844C5d36EEaC96F9DB6e7a60750fFe78E4",
+          "poolAddress": "0x2B24f5cEe3Fdc3ed3F2B7b1d989A67452428ABF2",
+          "abi": "BASE_URL/abi/gamma/gammavault.json",
+          "image": "BASE_URL/assets/gamma/strategy-wide.svg",
+          "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/trade-usdt-wide",
+          "description": "The wide-range strategy will tend to earn less in fees and rewards, but may suffer less impermanent loss in a volatile environment. So while it may have less earning potential, it is likely to suffer less drawdowns."
         }
       ]
     }
