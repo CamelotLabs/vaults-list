@@ -364,7 +364,7 @@
         {
           "symbol": "fUSDC-USDC.e",
           "strategy": "SSSV",
-          "fullname": "Static Stable fUSDC/USDC.e",
+          "fullname": "Static Stable fUSDC-USDC.e",
           "address": "0xcdf750Bf7e2a5EbcF0A8771cf1a3AD0a9ded48Af",
           "poolAddress": "0xEA5b743dEd9d2E85c6eBebcc90a7a06031575708",
           "abi": "BASE_URL/abi/steer/steervault.json",
