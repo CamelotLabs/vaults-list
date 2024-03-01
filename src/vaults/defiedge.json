@@ -118,6 +118,28 @@
           "image": "BASE_URL/assets/defiedge/strategy-alo.svg",
           "url": "https://camelot.defiedge.io/s/arbitrum/0xBbbB8507d7F4Ac87DE825848D163F7A76048a4E3",
           "description": "Optimize your liquidity management with DeFiEdge's Automated Liquidity Optimization (ALO) solution. Designed to manage both narrow and wide ranges within a single strategy. ALO dynamically allocates liquidity in response to market volatility and fluctuations, aiming for consistent returns and reduced impermanent loss."
+        },
+        {
+          "symbol": "UMAMI-WETH",
+          "strategy": "ALO",
+          "fullname": "DefiEdge UMAMI-WETH",
+          "address": "0xB7cFaCb1412546FB7f7d52ad12F564109Ff1b6dF",
+          "poolAddress": "0x684773cE156147e28c3C095D00C6BC9da2444fBC",
+          "abi": "BASE_URL/abi/defiedge/defiedgevault.json",
+          "image": "BASE_URL/assets/defiedge/strategy-alo.svg",
+          "url": "https://app.defiedge.io/s/arbitrum/0xB7cFaCb1412546FB7f7d52ad12F564109Ff1b6dF",
+          "description": "Optimize your liquidity management with DeFiEdge's Automated Liquidity Optimization (ALO) solution. Designed to manage both narrow and wide ranges within a single strategy. ALO dynamically allocates liquidity in response to market volatility and fluctuations, aiming for consistent returns and reduced impermanent loss."
+        },
+        {
+          "symbol": "DPX-WETH",
+          "strategy": "ALO",
+          "fullname": "DefiEdge DPX-WETH",
+          "address": "0x6DA519D8652308D28523906e0d8079DBc0e97c06",
+          "poolAddress": "0x59A327d948db1810324a04D69CBe9fe9884F8F28",
+          "abi": "BASE_URL/abi/defiedge/defiedgevault.json",
+          "image": "BASE_URL/assets/defiedge/strategy-alo.svg",
+          "url": "https://app.defiedge.io/s/arbitrum/0x6DA519D8652308D28523906e0d8079DBc0e97c06",
+          "description": "Optimize your liquidity management with DeFiEdge's Automated Liquidity Optimization (ALO) solution. Designed to manage both narrow and wide ranges within a single strategy. ALO dynamically allocates liquidity in response to market volatility and fluctuations, aiming for consistent returns and reduced impermanent loss."
         }
       ]
     }
