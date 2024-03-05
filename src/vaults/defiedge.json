@@ -173,6 +173,17 @@
           "image": "BASE_URL/assets/defiedge/strategy-alo.svg",
           "url": "https://app.defiedge.io/s/arbitrum/0xaED65b3ab0AeC2F5E3f1a98E49c112c304fd15b6",
           "description": "Optimize your liquidity management with DeFiEdge's Automated Liquidity Optimization (ALO) solution. Designed to manage both narrow and wide ranges within a single strategy. ALO dynamically allocates liquidity in response to market volatility and fluctuations, aiming for consistent returns and reduced impermanent loss."
+        },
+        {
+          "symbol": "PENDLE-WETH",
+          "strategy": "ALO",
+          "fullname": "DefiEdge PENDLE-WETH",
+          "address": "0x29885581D40838d6b13a3BF008c9c652a883E8a3",
+          "poolAddress": "0xE461f84C3fE6BCDd1162Eb0Ef4284F3bB6e4CAD3",
+          "abi": "BASE_URL/abi/defiedge/defiedgevault.json",
+          "image": "BASE_URL/assets/defiedge/strategy-alo.svg",
+          "url": "https://app.defiedge.io/s/arbitrum/0x29885581D40838d6b13a3BF008c9c652a883E8a3",
+          "description": "Optimize your liquidity management with DeFiEdge's Automated Liquidity Optimization (ALO) solution. Designed to manage both narrow and wide ranges within a single strategy. ALO dynamically allocates liquidity in response to market volatility and fluctuations, aiming for consistent returns and reduced impermanent loss."
         }
       ]
     }
