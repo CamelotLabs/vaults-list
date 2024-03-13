@@ -877,6 +877,17 @@
           "image": "BASE_URL/assets/gamma/strategy-pegged-price.svg",
           "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/ezeth-weth-pegged-price",
           "description": "Liquidity is provided directly around the net asset value of a provided asset. For example, a wrapped, staked ETH derivative asset will be provided only within a fixed range around its net asset value."
+        },
+        {
+          "symbol": "ALGB-ETH",
+          "strategy": "Wide",
+          "fullname": "Gamma Wide ALGB-ETH",
+          "address": "0x7146d3A5411521A82b83e5Ef7F7997338A289BfC",
+          "poolAddress": "0x2C5744D52C9B9AAFD02f993B9898D17768A97515",
+          "abi": "BASE_URL/abi/gamma/gammavault.json",
+          "image": "BASE_URL/assets/gamma/strategy-wide.svg",
+          "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/weth-algb-wide",
+          "description": "The wide-range strategy will tend to earn less in fees and rewards, but may suffer less impermanent loss in a volatile environment. So while it may have less earning potential, it is likely to suffer less drawdowns."
         }
       ]
     }
