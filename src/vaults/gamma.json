@@ -888,6 +888,17 @@
           "image": "BASE_URL/assets/gamma/strategy-wide.svg",
           "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/weth-algb-wide",
           "description": "The wide-range strategy will tend to earn less in fees and rewards, but may suffer less impermanent loss in a volatile environment. So while it may have less earning potential, it is likely to suffer less drawdowns."
+        },
+        {
+          "symbol": "PEAS-ETH",
+          "strategy": "Wide",
+          "fullname": "Gamma Wide PEAS-ETH",
+          "address": "0x923Ca1b4a71CBb98077A527f5a59CD6b9C8C9c35",
+          "poolAddress": "0x44cC8b40B1483e62e59EF937441Ba6aA8E584A77",
+          "abi": "BASE_URL/abi/gamma/gammavault.json",
+          "image": "BASE_URL/assets/gamma/strategy-wide.svg",
+          "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/peas-weth-wide",
+          "description": "The wide-range strategy will tend to earn less in fees and rewards, but may suffer less impermanent loss in a volatile environment. So while it may have less earning potential, it is likely to suffer less drawdowns."
         }
       ]
     }
