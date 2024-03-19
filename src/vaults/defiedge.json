@@ -88,8 +88,8 @@
         },
         {
           "symbol": "KUJI-ETH",
-          "strategy": "ALO",
-          "fullname": "DefiEdge KUJI-ETH",
+          "strategy": "ALO Wide",
+          "fullname": "DefiEdge KUJI-WETH Broad",
           "address": "0xCCeE66fe04B1b403fFDeaBc4f3e12e390ec99497",
           "poolAddress": "0x22427D20480DE289795Ca29c3ADDdb57A568e285",
           "abi": "BASE_URL/abi/defiedge/defiedgevault.json",
@@ -99,8 +99,8 @@
         },
         {
           "symbol": "KUJI-USDC",
-          "strategy": "ALO",
-          "fullname": "DefiEdge KUJI-USDC",
+          "strategy": "ALO Wide",
+          "fullname": "DefiEdge KUJI-USDC Broad",
           "address": "0x6F72AA5e1b42F0d091Ba6C2b9fE3E326A3DF6160",
           "poolAddress": "0xD8043be1668FAc205B9747E46D0C26c1Eae2708f",
           "abi": "BASE_URL/abi/defiedge/defiedgevault.json",
@@ -198,8 +198,8 @@
         },
         {
           "symbol": "KUJI-ETH",
-          "strategy": "ALO",
-          "fullname": "DefiEdge KUJI-ETH",
+          "strategy": "ALO Hyper",
+          "fullname": "DefiEdge KUJI-WETH Concentrated",
           "address": "0x9Dc8F6f203D7932bAB26A3c75F522d6C1a2a2922",
           "poolAddress": "0x22427D20480DE289795Ca29c3ADDdb57A568e285",
           "abi": "BASE_URL/abi/defiedge/defiedgevault.json",
@@ -209,8 +209,8 @@
         },
           {
           "symbol": "KUJI-USDC",
-          "strategy": "ALO",
-          "fullname": "DefiEdge KUJI-USDC",
+          "strategy": "ALO Hyper",
+          "fullname": "DefiEdge KUJI-USDC Concentrated",
           "address": "0x4cE5e1aCf577eDF4852065095C2B5E3d6af39bfC",
           "poolAddress": "0xD8043be1668FAc205B9747E46D0C26c1Eae2708f",
           "abi": "BASE_URL/abi/defiedge/defiedgevault.json",
