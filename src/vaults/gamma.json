@@ -384,17 +384,6 @@
           "description": "Liquidity ranges are aimed to straddle 1 at various ranges depending on backtesting results.  For more volatile stablecoin pairs, wider ranges will be used, and for blue-chip stables, narrower ranges will be used."
         },
         {
-          "symbol": "CONE-USDC",
-          "strategy": "Narrow",
-          "fullname": "Gamma Narrow CONE-USDC",
-          "address": "0xFe03a2Ef62BE896B4b82e8f90Fc54F06a98D5b9c",
-          "poolAddress": "0x7770132297942f452293f4EC8fd3E0d966272b93",
-          "abi": "BASE_URL/abi/gamma/gammavault.json",
-          "image": "BASE_URL/assets/gamma/strategy-narrow.svg",
-          "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/usdc-cone-narrow",
-          "description": "The narrow-range strategy will tend to earn more in fees and rewards, but may potentially incur greater losses in a highly volatile market. Narrow range strategies tend to do well when there is less volatility or when there are high fees and rewards."
-        },
-        {
           "symbol": "SOL-USDC",
           "strategy": "Narrow",
           "fullname": "Gamma Narrow SOL-USDC",
