@@ -888,6 +888,50 @@
           "image": "BASE_URL/assets/gamma/strategy-wide.svg",
           "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/peas-weth-wide",
           "description": "The wide-range strategy will tend to earn less in fees and rewards, but may suffer less impermanent loss in a volatile environment. So while it may have less earning potential, it is likely to suffer less drawdowns."
+        },
+        {
+          "symbol": "taoUSD-USDC",
+          "strategy": "Stable",
+          "fullname": "Gamma Stable taoUSD-USDC",
+          "address": "0x75D75Da173126bC648ba799C91A8fca106fFeAe9",
+          "poolAddress": "0x94665D0572Fb4D4814e2aA0F78641fBbDa1F2Ce7",
+          "abi": "BASE_URL/abi/gamma/gammavault.json",
+          "image": "BASE_URL/assets/gamma/strategy-stable.svg",
+          "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/taousd-usdc-stable",
+          "description": "Liquidity ranges are aimed to straddle 1 at various ranges depending on backtesting results.  For more volatile stablecoin pairs, wider ranges will be used, and for blue-chip stables, narrower ranges will be used."
+        },
+        {
+          "symbol": "LOCUS-ETH",
+          "strategy": "Wide",
+          "fullname": "Gamma Wide LOCUS-ETH",
+          "address": "0xed7C8670664D24912A59beAd864249f3EB3D2246",
+          "poolAddress": "0xB20471dF76d30F2Cc361A20B03a63F93E9906338",
+          "abi": "BASE_URL/abi/gamma/gammavault.json",
+          "image": "BASE_URL/assets/gamma/strategy-wide.svg",
+          "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/weth-locus-wide",
+          "description": "The wide-range strategy will tend to earn less in fees and rewards, but may suffer less impermanent loss in a volatile environment. So while it may have less earning potential, it is likely to suffer less drawdowns."
+        },
+        {
+          "symbol": "pxETH-ETH",
+          "strategy": "Stable",
+          "fullname": "Gamma Stable pxETH-ETH",
+          "address": "0x70d16CC68b529Dbc5F7CeC037537143064AC2784",
+          "poolAddress": "0x1d9E8E0a4B445cEfF9b8673eD5b219cCb38a4117",
+          "abi": "BASE_URL/abi/gamma/gammavault.json",
+          "image": "BASE_URL/assets/gamma/strategy-stable.svg",
+          "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/pxeth-weth-stable",
+          "description": "Liquidity ranges are aimed to straddle 1 at various ranges depending on backtesting results.  For more volatile stablecoin pairs, wider ranges will be used, and for blue-chip stables, narrower ranges will be used."
+        },
+        {
+          "symbol": "MOON-ETH",
+          "strategy": "Wide",
+          "fullname": "Gamma Wide MOON-ETH",
+          "address": "0x1AF1b7ad0a6A7B76062ce945213D361D0127e859",
+          "poolAddress": "0x5e27A422ec06A57567a843FD65A1BBB06aC19FC0",
+          "abi": "BASE_URL/abi/gamma/gammavault.json",
+          "image": "BASE_URL/assets/gamma/strategy-wide.svg",
+          "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/moon-weth-wide",
+          "description": "The wide-range strategy will tend to earn less in fees and rewards, but may suffer less impermanent loss in a volatile environment. So while it may have less earning potential, it is likely to suffer less drawdowns."
         }
       ]
     }
