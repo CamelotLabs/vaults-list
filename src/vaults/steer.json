@@ -10,6 +10,17 @@
       "depositProxyAbi": "BASE_URL/abi/steer/steerproxyhelper.json",
       "strategies": [
         {
+          "symbol": "stEUR-flrEUR",
+          "strategy": "SSSV",
+          "fullname": "Static Stable Strategy stEUR-flrEUR",
+          "address": "0x3Df13f8430B9DBd148a178f0Fe361b18A38A01d1",
+          "poolAddress": "0x37779cf6A027959228DA273fBC2Ab708A01638d6",
+          "abi": "BASE_URL/abi/steer/steervault.json",
+          "image": "BASE_URL/assets/steer/strategy-stable.svg",
+          "url": "https://app.steer.finance/vault/0x3df13f8430b9dbd148a178f0fe361b18a38a01d1",
+          "description": "Static stable strategies are designed for assets pegged at a theoretical price. Various widths and depths can be achieved to give users the desired liquidity shape while market making. These strategies are incredibly safe and resistant to IL given their nature."
+        },
+        {
           "symbol": "ARB-USDC",
           "strategy": "MVCS",
           "fullname": "Moving Volatility Channel ARB-USDC",
