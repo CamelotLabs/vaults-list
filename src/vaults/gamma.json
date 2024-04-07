@@ -943,6 +943,28 @@
           "image": "BASE_URL/assets/gamma/strategy-stable.svg",
           "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/usde-usdc-stable",
           "description": "Liquidity ranges are aimed to straddle 1 at various ranges depending on backtesting results.  For more volatile stablecoin pairs, wider ranges will be used, and for blue-chip stables, narrower ranges will be used."
+        },
+        {
+          "symbol": "weETH-ETH",
+          "strategy": "Pegged Price",
+          "fullname": "Gamma Pegged Price weETH-ETH",
+          "address": "0x85049C0052A5b41eC63a23B76a00646bc16A47B0",
+          "poolAddress": "0x293DFD996d5cd72Bed712B0EEAb96DBE400c0416",
+          "abi": "BASE_URL/abi/gamma/gammavault.json",
+          "image": "BASE_URL/assets/gamma/strategy-pegged-price.svg",
+          "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/weeth-weth-stable",
+          "description": "Liquidity is provided directly around the net asset value of a provided asset. For example, a wrapped, staked ETH derivative asset will be provided only within a fixed range around its net asset value."
+        },
+        {
+          "symbol": "milkTIA-TIA.n",
+          "strategy": "Pegged Price",
+          "fullname": "Gamma Pegged Price milkTIA-TIA.n",
+          "address": "0xc5DbA7af47b13d23dd87F047baC95500c42845B3",
+          "poolAddress": "0x8Bf9C3975172c57E37b3D1c1348e9b5280FB3BaA",
+          "abi": "BASE_URL/abi/gamma/gammavault.json",
+          "image": "BASE_URL/assets/gamma/strategy-pegged-price.svg",
+          "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/milktia-tia-stable",
+          "description": "Liquidity is provided directly around the net asset value of a provided asset. For example, a wrapped, staked ETH derivative asset will be provided only within a fixed range around its net asset value."
         }
       ]
     }
