@@ -965,6 +965,28 @@
           "image": "BASE_URL/assets/gamma/strategy-pegged-price.svg",
           "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/milktia-tia-stable",
           "description": "Liquidity is provided directly around the net asset value of a provided asset. For example, a wrapped, staked ETH derivative asset will be provided only within a fixed range around its net asset value."
+        },
+        {
+          "symbol": "wTIA-ETH",
+          "strategy": "Wide",
+          "fullname": "Gamma Wide wTIA-ETH",
+          "address": "0xd26290057BE2C6BB7b1403d39710862631e9a904",
+          "poolAddress": "0x6241A32429c5362012047Eceb8aA1395CC65Ee96",
+          "abi": "BASE_URL/abi/gamma/gammavault.json",
+          "image": "BASE_URL/assets/gamma/strategy-wide.svg",
+          "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/wtia-weth-wide",
+          "description": "The wide-range strategy will tend to earn less in fees and rewards, but may suffer less impermanent loss in a volatile environment. So while it may have less earning potential, it is likely to suffer less drawdowns."
+        },
+        {
+          "symbol": "FLY-USDC",
+          "strategy": "Wide",
+          "fullname": "Gamma Wide FLY-USDC",
+          "address": "0x32B6Eb43Aaa4cE2c22c5C7eE707b5467e2C1ff0c",
+          "poolAddress": "0xD42ef780e9B290Aa071C08B8e766f29A53A7f982",
+          "abi": "BASE_URL/abi/gamma/gammavault.json",
+          "image": "BASE_URL/assets/gamma/strategy-wide.svg",
+          "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/fly-usdc-wide",
+          "description": "The wide-range strategy will tend to earn less in fees and rewards, but may suffer less impermanent loss in a volatile environment. So while it may have less earning potential, it is likely to suffer less drawdowns."
         }
       ]
     }
