@@ -987,6 +987,28 @@
           "image": "BASE_URL/assets/gamma/strategy-wide.svg",
           "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/fly-usdc-wide",
           "description": "The wide-range strategy will tend to earn less in fees and rewards, but may suffer less impermanent loss in a volatile environment. So while it may have less earning potential, it is likely to suffer less drawdowns."
+        },
+        {
+          "symbol": "WBTC-USDC",
+          "strategy": "Narrow",
+          "fullname": "Gamma Narrow WBTC-USDC",
+          "address": "0x5FA08E5A59DaEe3086a28068A143AFf990C67A0F",
+          "poolAddress": "0x02bE4f98FC9Ee4F612a139D84494CBf6c6c7F97f",
+          "abi": "BASE_URL/abi/gamma/gammavault.json",
+          "image": "BASE_URL/assets/gamma/strategy-narrow.svg",
+          "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/wbtc-usdc-narrow",
+          "description": "The narrow-range strategy will tend to earn more in fees and rewards, but may potentially incur greater losses in a highly volatile market. Narrow range strategies tend to do well when there is less volatility or when there are high fees and rewards."
+        },
+        {
+          "symbol": "KWENTA-ETH",
+          "strategy": "Wide",
+          "fullname": "Gamma Wide KWENTA-ETH",
+          "address": "0xA1C92e407AA4b6A62A22f5dE30C136e75E9D7E46",
+          "poolAddress": "0xd5451D82882c324Dfc621d527ffA462f2C5Ea130",
+          "abi": "BASE_URL/abi/gamma/gammavault.json",
+          "image": "BASE_URL/assets/gamma/strategy-wide.svg",
+          "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/kwenta-weth-wide",
+          "description": "The wide-range strategy will tend to earn less in fees and rewards, but may suffer less impermanent loss in a volatile environment. So while it may have less earning potential, it is likely to suffer less drawdowns."
         }
       ]
     }
