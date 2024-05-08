@@ -1009,6 +1009,28 @@
           "image": "BASE_URL/assets/gamma/strategy-wide.svg",
           "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/kwenta-weth-wide",
           "description": "The wide-range strategy will tend to earn less in fees and rewards, but may suffer less impermanent loss in a volatile environment. So while it may have less earning potential, it is likely to suffer less drawdowns."
+        },
+        {
+          "symbol": "ODG-ETH",
+          "strategy": "Wide",
+          "fullname": "Gamma Wide ODG-ETH",
+          "address": "0x43f2eB1EDE180DB1eE5268b041104698F4A6Bb86",
+          "poolAddress": "0xF935263c9950EB2881FF58Bd6a76c3D2564A78D5",
+          "abi": "BASE_URL/abi/gamma/gammavault.json",
+          "image": "BASE_URL/assets/gamma/strategy-wide.svg",
+          "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/odg-weth-wide",
+          "description": "The wide-range strategy will tend to earn less in fees and rewards, but may suffer less impermanent loss in a volatile environment. So while it may have less earning potential, it is likely to suffer less drawdowns."
+        },
+        {
+          "symbol": "OD-ETH",
+          "strategy": "Wide",
+          "fullname": "Gamma Wide OD-ETH",
+          "address": "0x831D3fEeD9Ae9516468C4F4972E89f201C5E27AF",
+          "poolAddress": "0x824959a55907d5350e73e151Ff48DabC5A37a657",
+          "abi": "BASE_URL/abi/gamma/gammavault.json",
+          "image": "BASE_URL/assets/gamma/strategy-wide.svg",
+          "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/od-weth-wide",
+          "description": "The wide-range strategy will tend to earn less in fees and rewards, but may suffer less impermanent loss in a volatile environment. So while it may have less earning potential, it is likely to suffer less drawdowns."
         }
       ]
     }
