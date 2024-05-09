@@ -382,6 +382,50 @@
           "image": "BASE_URL/assets/steer/strategy-stable.svg",
           "url": "https://app.steer.finance/vault/0x3df13f8430b9dbd148a178f0fe361b18a38a01d1",
           "description": "Static stable strategies are designed for assets pegged at a theoretical price. Various widths and depths can be achieved to give users the desired liquidity shape while market making. These strategies are incredibly safe and resistant to IL given their nature."
+        },
+        {
+          "symbol": "ETH+-WETH",
+          "strategy": "SSSV",
+          "fullname": "Static Stable Strategy ETH+-WETH",
+          "address": "0x9d9C0A46E0A84f8e64Df60A07F217F2A53DAEEa3",
+          "poolAddress": "0x8DD043B553F96Fb8f30d6B97aCAD12A940A9c384",
+          "abi": "BASE_URL/abi/steer/steervault.json",
+          "image": "BASE_URL/assets/steer/strategy-stable.svg",
+          "url": "https://app.steer.finance/vault/0x9d9c0a46e0a84f8e64df60a07f217f2a53daeea3",
+          "description": "Static stable strategies are designed for assets pegged at a theoretical price. Various widths and depths can be achieved to give users the desired liquidity shape while market making. These strategies are incredibly safe and resistant to IL given their nature."
+        },
+        {
+          "symbol": "rgUSD-USDC",
+          "strategy": "SSSV",
+          "fullname": "Static Stable Strategy rgUSD-USDC",
+          "address": "0xba3eBf55d96CAc487A11B49477840c190f36E419",
+          "poolAddress": "0x8359f9ABC3164ffd59964d3dac7052a40418A8a2",
+          "abi": "BASE_URL/abi/steer/steervault.json",
+          "image": "BASE_URL/assets/steer/strategy-stable.svg",
+          "url": "https://app.steer.finance/vault/0xba3ebf55d96cac487a11b49477840c190f36e419",
+          "description": "Static stable strategies are designed for assets pegged at a theoretical price. Various widths and depths can be achieved to give users the desired liquidity shape while market making. These strategies are incredibly safe and resistant to IL given their nature."
+        },
+        {
+          "symbol": "eUSD-rgUSD",
+          "strategy": "SSSV",
+          "fullname": "Static Stable Strategy eUSD-rgUSD",
+          "address": "0xF2c44473799aF5EE16703A509Ff5D9dF95f7764C",
+          "poolAddress": "0x5263f9cAC15CeEE736dAd4D014af26D8F6ea8D41",
+          "abi": "BASE_URL/abi/steer/steervault.json",
+          "image": "BASE_URL/assets/steer/strategy-stable.svg",
+          "url": "https://app.steer.finance/vault/0xf2c44473799af5ee16703a509ff5d9df95f7764c",
+          "description": "Static stable strategies are designed for assets pegged at a theoretical price. Various widths and depths can be achieved to give users the desired liquidity shape while market making. These strategies are incredibly safe and resistant to IL given their nature."
+        },
+        {
+          "symbol": "KNOX-rgUSD",
+          "strategy": "SSSV",
+          "fullname": "Static Stable Strategy KNOX-rgUSD",
+          "address": "0xC8fB6F6dDaD4df2D15F342C591f7a88cC5e14F63",
+          "poolAddress": "0x5C77A1740baf754A532739FDAEd89F5FC74B869D",
+          "abi": "BASE_URL/abi/steer/steervault.json",
+          "image": "BASE_URL/assets/steer/strategy-stable.svg",
+          "url": "https://app.steer.finance/vault/0xc8fb6f6ddad4df2d15f342c591f7a88cc5e14f63",
+          "description": "Static stable strategies are designed for assets pegged at a theoretical price. Various widths and depths can be achieved to give users the desired liquidity shape while market making. These strategies are incredibly safe and resistant to IL given their nature."
         }
       ]
     }
