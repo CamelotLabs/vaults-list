@@ -1031,6 +1031,17 @@
           "image": "BASE_URL/assets/gamma/strategy-wide.svg",
           "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/od-weth-wide",
           "description": "The wide-range strategy will tend to earn less in fees and rewards, but may suffer less impermanent loss in a volatile environment. So while it may have less earning potential, it is likely to suffer less drawdowns."
+        },
+        {
+          "symbol": "IPOR-ETH",
+          "strategy": "Wide",
+          "fullname": "Gamma Wide IPOR-ETH",
+          "address": "0xe526C003dCBECCA8dC97804D9eeFad4F56a3BD4F",
+          "poolAddress": "0xbb1bDf90a4ab42622F6fA0B28861B23C0d67E7c6",
+          "abi": "BASE_URL/abi/gamma/gammavault.json",
+          "image": "BASE_URL/assets/gamma/strategy-wide.svg",
+          "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/ipor-weth-wide",
+          "description": "The wide-range strategy will tend to earn less in fees and rewards, but may suffer less impermanent loss in a volatile environment. So while it may have less earning potential, it is likely to suffer less drawdowns."
         }
       ]
     }
