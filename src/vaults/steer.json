@@ -437,6 +437,17 @@
           "image": "BASE_URL/assets/steer/strategy-stable.svg",
           "url": "https://app.steer.finance/vault/0xc8fb6f6ddad4df2d15f342c591f7a88cc5e14f63",
           "description": "Static stable strategies are designed for assets pegged at a theoretical price. Various widths and depths can be achieved to give users the desired liquidity shape while market making. These strategies are incredibly safe and resistant to IL given their nature."
+        },
+        {
+          "symbol": "USDe-USDC",
+          "strategy": "SSSV",
+          "fullname": "Static Stable Strategy USDe-USDC",
+          "address": "0xF8137C8CF3e049998dfD83C7B2FB680269e31b55",
+          "poolAddress": "0xc23f308CF1bFA7efFFB592920a619F00990F8D74",
+          "abi": "BASE_URL/abi/steer/steervault.json",
+          "image": "BASE_URL/assets/steer/strategy-stable.svg",
+          "url": "https://app.steer.finance/vault/0xf8137c8cf3e049998dfd83c7b2fb680269e31b55",
+          "description": "Static stable strategies are designed for assets pegged at a theoretical price. Various widths and depths can be achieved to give users the desired liquidity shape while market making. These strategies are incredibly safe and resistant to IL given their nature."
         }
       ]
     }
