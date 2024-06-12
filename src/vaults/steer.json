@@ -329,6 +329,17 @@
           "description": "The Classic Rebalance Strategy offers a dynamic approach to liquidity provision. By establishing a predetermined position size around the asset's current price, it ensures consistent market engagement. When the asset's price drifts beyond this active range, the strategy can promptly reposition, aligning the new position around the prevailing price. While this rebalancing method may expose users to some degree of impermanent loss, it's tailored for specific use cases where such a trade-off is desired, offering a unique balance between market engagement and return potential."
         },
         {
+          "symbol": "wstETH-ETHx",
+          "strategy": "CRSV",
+          "fullname": "Classic Rebalance wstETH-ETHx",
+          "address": "0x80a1FE04e7C2CFB62cfEE67361d1A3B57902766A",
+          "poolAddress": "0xeeDB8542778f37A273D16B8FA46A007b9f6f5854",
+          "abi": "BASE_URL/abi/steer/steervault.json",
+          "image": "BASE_URL/assets/steer/strategy-stable.svg",
+          "url": "https://app.steer.finance/vault/0x80a1fe04e7c2cfb62cfee67361d1a3b57902766a",
+          "description": "The Classic Rebalance Strategy offers a dynamic approach to liquidity provision. By establishing a predetermined position size around the asset's current price, it ensures consistent market engagement. When the asset's price drifts beyond this active range, the strategy can promptly reposition, aligning the new position around the prevailing price. While this rebalancing method may expose users to some degree of impermanent loss, it's tailored for specific use cases where such a trade-off is desired, offering a unique balance between market engagement and return potential."
+        },
+        {
           "symbol": "USDT-USDC",
           "strategy": "GSSS",
           "fullname": "Generic Static Stable USDT-USDC",
