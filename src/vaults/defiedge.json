@@ -195,6 +195,17 @@
           "image": "BASE_URL/assets/defiedge/strategy-alo.svg",
           "url": "https://app.defiedge.io/s/arbitrum/0xF42Ad2CF57B09025846354075E5bE567f0b26489",
           "description": "Optimize your liquidity management with DeFiEdge's Automated Liquidity Optimization (ALO) solution. Designed to manage both narrow and wide ranges within a single strategy. ALO dynamically allocates liquidity in response to market volatility and fluctuations, aiming for consistent returns and reduced impermanent loss."
+        },  
+        {
+          "symbol": "Bonsai-ETH",
+          "strategy": "ALO",
+          "fullname": "DefiEdge Bonsai-ETH",
+          "address": "0x22DeaaB767be6932860df7Db4CbC12c37D01B0Fb",
+          "poolAddress": "0x0943627eD56A33f6839856d3a781E73664Aa2138",
+          "abi": "BASE_URL/abi/defiedge/defiedgevault.json",
+          "image": "BASE_URL/assets/defiedge/strategy-alo.svg",
+          "url": "https://app.defiedge.io/s/arbitrum/0x22deaab767be6932860df7db4cbc12c37d01b0fb",
+          "description": "Optimize your liquidity management with DeFiEdge's Automated Liquidity Optimization (ALO) solution. Designed to manage both narrow and wide ranges within a single strategy. ALO dynamically allocates liquidity in response to market volatility and fluctuations, aiming for consistent returns and reduced impermanent loss."
         }
       ]
     }
