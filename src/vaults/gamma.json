@@ -1042,6 +1042,28 @@
           "image": "BASE_URL/assets/gamma/strategy-wide.svg",
           "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/ipor-weth-wide",
           "description": "The wide-range strategy will tend to earn less in fees and rewards, but may suffer less impermanent loss in a volatile environment. So while it may have less earning potential, it is likely to suffer less drawdowns."
+        },
+        {
+          "symbol": "USDV-USDC",
+          "strategy": "Stable",
+          "fullname": "Gamma Stable USDV-USDC",
+          "address": "0x77a061c9827e685a01A6bF2F44911CE02Bb46B1D",
+          "poolAddress": "0xfa893368620a0a26eC2DA65836962768aB5BeB9a",
+          "abi": "BASE_URL/abi/gamma/gammavault.json",
+          "image": "BASE_URL/assets/gamma/strategy-stable.svg",
+          "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/usdv-usdc-stable",
+          "description": "Liquidity ranges are aimed to straddle 1 at various ranges depending on backtesting results.  For more volatile stablecoin pairs, wider ranges will be used, and for blue-chip stables, narrower ranges will be used."
+        },
+        {
+          "symbol": "uniETH-ETH",
+          "strategy": "Pegged Price",
+          "fullname": "Gamma Pegged Price uniETH-ETH",
+          "address": "0xB9A3D77c2381a9188507814c623Ae5dB9e7727cd",
+          "poolAddress": "0xaf1C69a3849824852868a5559Bf9BFD00921148D",
+          "abi": "BASE_URL/abi/gamma/gammavault.json",
+          "image": "BASE_URL/assets/gamma/strategy-pegged-price.svg",
+          "url": "https://app.gamma.xyz/vault/camelot/arbitrum/details/unieth-weth-pegged-price",
+          "description": "Liquidity is provided directly around the net asset value of a provided asset. For example, a wrapped, staked ETH derivative asset will be provided only within a fixed range around its net asset value."
         }
       ]
     }
