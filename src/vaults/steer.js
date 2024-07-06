@@ -1,68 +1,68 @@
 const VAULT_URL = "https://app.steer.finance/vault"
 const { BASE_URL } = require("../buildList")
 
-const baseStrategy = (poolAddress) => ({
-  abi: `${BASE_URL}/abi/steer/steervault.json`,
-  image: `${BASE_URL}/assets/steer/strategy-stable.svg`,
-  url: `${VAULT_URL}/${poolAddress}`,
+const baseStrategy = (address, { abiOverride, imageOverride, urlOverride }) => ({
+  abi: abiOverride || `${BASE_URL}/abi/steer/steervault.json`,
+  image: imageOverride || `${BASE_URL}/assets/steer/strategy-stable.svg`,
+  url: urlOverride || `${VAULT_URL}/${address}`,
 })
 
 const strategyTemplates = {
-  MVCS: (symbol, poolAddress) => ({
-    ...baseStrategy(poolAddress),
+  MVCS: (symbol, address, overrides) => ({
+    ...baseStrategy(address, overrides),
     strategy: "MVCS",
-    fullname: `Moving Volatility Channel ${symbol}`,
+    fullname: `Steer Moving Volatility Channel ${symbol}`,
     description: "The Moving Volatility Channel Strategy harnesses the power of the Keltner Channel to monitor asset price volatility and trend direction. By setting boundaries based on average true ranges and moving averages, this strategy provides a responsive channel that adjusts to the asset's price fluctuations. Ideal for LPs who wish to optimize their positions in a dynamic market, it facilitates the identification of potential breakout or consolidation phases, ensuring you're always aligned with the market's rhythm."
   }),
-  CRSV: (symbol, poolAddress) => ({
-    ...baseStrategy(poolAddress),
+  CRSV: (symbol, address, overrides) => ({
+    ...baseStrategy(address, overrides),
     strategy: "CRSV",
-    fullname: `Classic Rebalance ${symbol}`,
+    fullname: `Steer Classic Rebalance ${symbol}`,
     description: "The Classic Rebalance Strategy offers a dynamic approach to liquidity provision. By establishing a predetermined position size around the asset's current price, it ensures consistent market engagement. When the asset's price drifts beyond this active range, the strategy can promptly reposition, aligning the new position around the prevailing price. While this rebalancing method may expose users to some degree of impermanent loss, it's tailored for specific use cases where such a trade-off is desired, offering a unique balance between market engagement and return potential."
   }),
-  GSSS: (symbol, poolAddress) => ({
-    ...baseStrategy(poolAddress),
+  GSSS: (symbol, address, overrides) => ({
+    ...baseStrategy(address, overrides),
     strategy: "GSSS",
-    fullname: `Generic Static Stable ${symbol}`,
+    fullname: `Steer Generic Static Stable ${symbol}`,
     description: "Static stable strategies are designed for assets pegged at a theoretical price. Various widths and depths can be achieved to give users the desired liquidity shape while market making. These strategies are incredibly safe and resistant to IL given their nature."
   }),
-  HLCS: (symbol, poolAddress) => ({
-    ...baseStrategy(poolAddress),
+  HLCS: (symbol, address, overrides) => ({
+    ...baseStrategy(address, overrides),
     strategy: "HLCS",
-    fullname: `High Low Channel ${symbol}`,
+    fullname: `Steer High Low Channel ${symbol}`,
     description: "The High Low Channel Strategy is a sophisticated LP approach that utilizes the Donchian channel as its foundation. By considering the highest high and the lowest low over a designated period, this strategy forms a robust price channel. An optional multiplier can be applied to widen the channel, offering more flexibility and potential to capitalize on larger price movements. With this strategy, LPs can dynamically adapt to market volatility and position themselves advantageously within the evolving price landscape."
   }),
-  EES: (symbol, poolAddress) => ({
-    ...baseStrategy(poolAddress),
+  EES: (symbol, address, overrides) => ({
+    ...baseStrategy(address, overrides),
     strategy: "EES",
-    fullname: `Elastic Expansion ${symbol}`,
+    fullname: `Steer Elastic Expansion ${symbol}`,
     description: "The Elastic Expansion Strategy employs the Bollinger Channel to determine potential price fluctuations within a specified range. By focusing on the inherent volatility of an asset, this strategy creates a responsive and adaptive position for LPs. It aims to capture optimal yield by identifying and adjusting to price expansions and contractions. This strategy not only offers a perspective on potential price peaks and troughs but also ensures that liquidity is placed where it's most likely to be utilized, maximizing returns for liquidity providers."
   }),
-  MSS: (symbol, poolAddress) => ({
-    ...baseStrategy(poolAddress),
+  MSS: (symbol, address, overrides) => ({
+    ...baseStrategy(address, overrides),
     strategy: "MSS",
-    fullname: `MIM-USDC Stable USDC-MIM`,
+    fullname: `Steer MIM-USDC Stable USDC-MIM`,
     description: "This strategy is designed for the MIM / USDC pool on Camelot DEX. Positions are set according to statistical likelihood of supporting trade volume."
   }),
-  HLCSV: (symbol, poolAddress) => ({
-    ...baseStrategy(poolAddress),
+  HLCSV: (symbol, address, overrides) => ({
+    ...baseStrategy(address, overrides),
     strategy: "HLCSV",
-    fullname: `High Low Channel V2 ${symbol}`,
+    fullname: `Steer High Low Channel V2 ${symbol}`,
     description: "The High Low Channel Strategy is a sophisticated LP approach that utilizes the Donchian channel as its foundation. By considering the highest high and the lowest low over a designated period, this strategy forms a robust price channel. An optional multiplier can be applied to widen the channel, offering more flexibility and potential to capitalize on larger price movements. With this strategy, LPs can dynamically adapt to market volatility and position themselves advantageously within the evolving price landscape."
   }),
-  SSSV: (symbol, poolAddress) => ({
-    ...baseStrategy(poolAddress),
+  SSSV: (symbol, address, overrides) => ({
+    ...baseStrategy(address, overrides),
     strategy: "SSSV",
-    fullname: `Static Stable ${symbol}`,
+    fullname: `Steer Static Stable ${symbol}`,
     description: "Static stable strategies are designed for assets pegged at a theoretical price. Various widths and depths can be achieved to give users the desired liquidity shape while market making. These strategies are incredibly safe and resistant to IL given their nature."
   }),
 }
 
-const createStrategy = ({strategy, symbol, address, poolAddress}) => ({
+const createStrategy = ({strategy, symbol, address, poolAddress}, overrides) => ({
   symbol,
   address,
   poolAddress,
-  ...strategyTemplates[strategy](symbol, poolAddress)
+  ...strategyTemplates[strategy](symbol, address, overrides)
 })
 
 module.exports = steer = () => ({
