@@ -1,5 +1,5 @@
 const VAULT_URL = "https://app.jonesdao.io/labs"
-const { BASE_URL } = require("../buildList")
+const BASE_URL = process.env.BASE_URL || "https://vaults-list.camelot.exchange"
 
 const baseStrategy = (address, { abiOverride, imageOverride, urlOverride }) => ({
   abi: abiOverride || `${BASE_URL}/abi/defiedge/defiedgevault.json`,
@@ -16,7 +16,7 @@ const strategyTemplates = {
   })
 }
 
-const createStrategy = ({strategy, symbol, address, poolAddress}, overrides) => ({
+const createStrategy = ({strategy, symbol, address, poolAddress}, overrides={}) => ({
   symbol,
   address,
   poolAddress,

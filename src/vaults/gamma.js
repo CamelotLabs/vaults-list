@@ -1,37 +1,37 @@
 const VAULT_URL = "https://app.gamma.xyz/vault/camelot/arbitrum/details"
-const { BASE_URL } = require("../buildList")
+const BASE_URL = process.env.BASE_URL || "https://vaults-list.camelot.exchange"
 
-const baseStrategy = ({ abiOverride }) => ({
+const baseStrategy = (abiOverride) => ({
   abi: abiOverride || `${BASE_URL}/abi/gamma/gammavault.json`,
 })
 
 const strategyTemplates = {
-  WIDE: (symbol, { imageOverride, urlOverride }) => ({
-    ...baseStrategy(overrides),
+  WIDE: (symbol, { imageOverride, urlOverride, abiOverride }) => ({
+    ...baseStrategy(abiOverride),
     strategy: "Wide",
     image: imageOverride || `${BASE_URL}/assets/gamma/strategy-wide.svg`,
     url: urlOverride || `${VAULT_URL}/${symbol.toLowerCase().replace(/^eth-/, 'weth-').replace(/-eth$/, '-weth')}-wide`,
     fullname: `Gamma Wide ${symbol}`,
     description: "The wide-range strategy will tend to earn less in fees and rewards, but may suffer less impermanent loss in a volatile environment. So while it may have less earning potential, it is likely to suffer less drawdowns."
   }),
-  NARROW: (symbol, { imageOverride, urlOverride }) => ({
-    ...baseStrategy(overrides),
+  NARROW: (symbol, { imageOverride, urlOverride, abiOverride }) => ({
+    ...baseStrategy(abiOverride),
     strategy: "Narrow",
     image: imageOverride || `${BASE_URL}/assets/gamma/strategy-narrow.svg`,
     url: urlOverride || `${VAULT_URL}/${symbol.toLowerCase().replace(/^eth-/, 'weth-').replace(/-eth$/, '-weth')}-narrow`,
     fullname: `Gamma Narrow ${symbol}`,
     description: "The narrow-range strategy will tend to earn more in fees and rewards, but may potentially incur greater losses in a highly volatile market. Narrow range strategies tend to do well when there is less volatility or when there are high fees and rewards."
   }),
-  STABLE: (symbol, { imageOverride, urlOverride }) => ({
-    ...baseStrategy(overrides),
+  STABLE: (symbol, { imageOverride, urlOverride, abiOverride }) => ({
+    ...baseStrategy(abiOverride),
     strategy: "Stable",
     image: imageOverride || `${BASE_URL}/assets/gamma/strategy-stable.svg`,
     url: urlOverride || `${VAULT_URL}/${symbol.toLowerCase().replace(/^eth-/, 'weth-').replace(/-eth$/, '-weth')}-stable`,
     fullname: `Gamma Narrow ${symbol}`,
     description: "Liquidity ranges are aimed to straddle 1 at various ranges depending on backtesting results. For more volatile stablecoin pairs, wider ranges will be used, and for blue-chip stables, narrower ranges will be used."
   }),
-  PEGGED: (symbol, { imageOverride, urlOverride }) => ({
-    ...baseStrategy(overrides),
+  PEGGED: (symbol, { imageOverride, urlOverride, abiOverride }) => ({
+    ...baseStrategy(abiOverride),
     strategy: "Pegged",
     image: imageOverride || `${BASE_URL}/assets/gamma/strategy-pegged-price.svg`,
     url: urlOverride || `${VAULT_URL}/${symbol.toLowerCase().replace(/^eth-/, 'weth-').replace(/-eth$/, '-weth')}-pegged-price`,
@@ -40,7 +40,7 @@ const strategyTemplates = {
   })
 }
 
-const createStrategy = ({strategy, symbol, address, poolAddress}, overrides) => ({
+const createStrategy = ({strategy, symbol, address, poolAddress}, overrides={}) => ({
   symbol,
   address,
   poolAddress,
@@ -678,7 +678,6 @@ module.exports = gamma = () => ({
           address: "0xB9A3D77c2381a9188507814c623Ae5dB9e7727cd",
           poolAddress: "0xaf1C69a3849824852868a5559Bf9BFD00921148D"
         })
-
       ]
     }
   ]
