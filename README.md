@@ -8,7 +8,7 @@ To add your vaults to an existing integration on Camelot frontend, you should cr
 
 **1. Fork this repo**
 
-**2. Add your protocol in the relevant "protocol".json file in src/vaults/.** 
+**2. Add your protocol in the relevant "protocol".js file in src/vaults/.** 
 
 Create the file if it doesn't exist, and add the corresponding entry in src/buildList.js
 
@@ -36,6 +36,19 @@ Create the file if it doesn't exist, and add the corresponding entry in src/buil
 
 **7. Provide the following optional links for each of your strategies.**
 
+Follow the composition approach as demonstrated in each protocol file for adding strategies.
+
+Each strategy is composed via `createStrategy`. The first argument should be an object containing `strategy`, `symbol`, `address` & `poolAddress`. The second argument should be an object containing OPTIONAL override properties for the given strategy- `imageOverride`, `urlOverride`, `abiOverride`.
+
+Use override values if the default computed values for `image`, `url` or `abi` will be incorrect. These values can be computed differently based on the protocol, for example, Gamma uses `symbol` inside the vault URL vs DefiEdge that only uses the `address`.
+
+The `strategy` should directly map to a strategy key under `strategyTemplates`, which contains all the strategy specific information.
+
+`baseStrategy` contains the information that should be common across all strategies.
+
+For every pair involving ETH or a stable coin, the `symbol` should always start with the other token. `GRAIL-ETH` or `GRAIL-USDC`
+
+Ultimately, each strategy will contain:
 - symbol (string): strategy symbol
 - strategy (string): strategy short name
 - fullname (string): strategy full name
