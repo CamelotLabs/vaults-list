@@ -276,7 +276,7 @@ module.exports = steer = () => ({
       createStrategy({
         strategy: "SSSV",
         symbol: "fUSDC-USDC.e",
-        address: "0xcdf750Bf7e2a5EbcF0a8771cf1a3AD0a9ded48Af",
+        address: "0xcdf750Bf7e2a5EbcF0A8771cf1a3AD0a9ded48Af",
         poolAddress: "0xEA5b743dEd9d2E85c6eBebcc90a7a06031575708"
       }),
       createStrategy({
