@@ -1,19 +1,16 @@
 require('dotenv').config()
-const beefy = require("./vaults/beefy.json");
-const defiedge = require("./vaults/defiedge.json");
-const gamma = require("./vaults/gamma.json");
-const jones = require("./vaults/jones.json");
-const steer = require("./vaults/steer.json");
+const beefy = require("./vaults/beefy");
+const defiedge = require("./vaults/defiedge");
+const gamma = require("./vaults/gamma");
+const jones = require("./vaults/jones");
+const steer = require("./vaults/steer");
 
-const BASE_URL = process.env.BASE_URL || "https://vaults-list.camelot.exchange"
-
-module.exports = function buildList() {
-    const vaults = [beefy, defiedge, gamma, jones, steer]
-    const processedVaults = JSON.parse(JSON.stringify(vaults).replace(/BASE_URL/g, BASE_URL))
+module.exports = buildList = () => {
+    const vaults = [beefy(), defiedge(), gamma(), jones(), steer()]
 
     return {
         name: "Camelot ALM Vaults",
         timestamp: new Date().toISOString(),
-        vaults: processedVaults
+        vaults
     };
 };
