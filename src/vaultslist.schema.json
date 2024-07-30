@@ -11,7 +11,7 @@
     "StrategyInfo": {
       "type": "object",
       "description": "Metadata for a strategy",
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "symbol": {
           "type": "string",
@@ -87,7 +87,7 @@
     "ChainInfo": {
       "type": "object",
       "description": "Metadata for vaults on a single chain for an ALM",
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "chainId": {
           "type": "integer",
@@ -125,7 +125,7 @@
     "ALMInfo": {
       "type": "object",
       "description": "Metadata for a single ALM in an ALMs list",
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         "name": {
           "type": "string",

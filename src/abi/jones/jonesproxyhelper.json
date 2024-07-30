@@ -77,7 +77,22 @@
           },
           {
             "internalType": "address",
-            "name": "strategy",
+            "name": "factory",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "router",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "manager",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "compounder",
             "type": "address"
           },
           {
@@ -147,7 +162,22 @@
           },
           {
             "internalType": "address",
-            "name": "strategy",
+            "name": "factory",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "router",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "manager",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "compounder",
             "type": "address"
           },
           {
