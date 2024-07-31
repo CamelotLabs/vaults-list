@@ -25,6 +25,7 @@ const createStrategy = ({strategy, symbol, address, poolAddress}, overrides={}) 
 
 module.exports = jones = () => ({
   name: "Jones (Legacy)",
+  id: "joneslegacy",
   logo: `${BASE_URL}/assets/jones/legacy/logo.png`,
   logoSm: `${BASE_URL}/assets/jones/legacy/logo-sm.png`,
   chains: [{

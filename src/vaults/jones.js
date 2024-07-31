@@ -44,6 +44,7 @@ const createStrategy = ({strategy, symbol, address, compounderAddress, poolAddre
 
 module.exports = jones = () => ({
   name: "Jones",
+  id: "jones",
   logo: `${BASE_URL}/assets/jones/logo.png`,
   logoSm: `${BASE_URL}/assets/jones/logo-sm.svg`,
   chains: [{

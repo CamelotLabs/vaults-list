@@ -49,6 +49,7 @@ const createStrategy = ({strategy, symbol, address, poolAddress}, overrides={}) 
 
 module.exports = gamma = () => ({
   name: "Gamma",
+  id: "gamma",
   logo: `${BASE_URL}/assets/gamma/logo.png`,
   logoSm: `${BASE_URL}/assets/gamma/logo-sm.svg`,
   chains: [

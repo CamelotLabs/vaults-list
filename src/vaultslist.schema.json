@@ -134,6 +134,13 @@
           "maxLength": 32,
           "examples": ["Gamma"]
         },
+        "id": {
+          "type": "string",
+          "description": "The ID of the ALM protocol",
+          "minLength": 2,
+          "maxLength": 16,
+          "examples": ["gamma","defiedge","joneslegacy"]
+        },
         "logo": {
           "type": "string",
           "description": "A URI to the protocol wide logo asset; suggest SVG or PNG",
@@ -154,7 +161,7 @@
           }
         }
       },
-      "required": ["name", "logo", "logoSm", "chains"]
+      "required": ["name", "id", "logo", "logoSm", "chains"]
     }
   },
   "type": "object",

@@ -67,6 +67,7 @@ const createStrategy = ({strategy, symbol, address, poolAddress}, overrides={}) 
 
 module.exports = steer = () => ({
   name: "Steer",
+  id: "steer",
   logo: `${BASE_URL}/assets/steer/logo.svg`,
   logoSm: `${BASE_URL}/assets/steer/logo-sm.png`,
   chains: [{

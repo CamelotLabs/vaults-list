@@ -25,6 +25,7 @@ const createStrategy = ({strategy, symbol, address, poolAddress}, overrides={}) 
 
 module.exports = beefy = () => ({
   name: "Beefy",
+  id: "beefy",
   logo: `${BASE_URL}/assets/beefy/logo.svg`,
   logoSm: `${BASE_URL}/assets/beefy/logo-sm.svg`,
   chains: [

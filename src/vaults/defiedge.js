@@ -25,6 +25,7 @@ const createStrategy = ({strategy, symbol, address, poolAddress}, overrides={}) 
 
 module.exports = defiEdge = () => ({
   name: "DefiEdge",
+  id: "defiedge",
   logo: `${BASE_URL}/assets/defiedge/logo.png`,
   logoSm: `${BASE_URL}/assets/defiedge/logo-sm.svg`,
   chains: [
