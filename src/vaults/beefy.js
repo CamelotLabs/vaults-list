@@ -139,12 +139,6 @@ module.exports = beefy = () => ({
         }),
         createStrategy({
           strategy: "COWCENTRATED",
-          symbol: "USDC-ETH",
-          address: "0xDa3E652A86B3FD320512cadd87D6504fa18aEC65",
-          poolAddress: "0xB1026b8e7276e7AC75410F1fcbbe21796e8f7526"
-        }),
-        createStrategy({
-          strategy: "COWCENTRATED",
           symbol: "wstETH-ETH",
           address: "0xc4AE801d239da28A9108a5E6caD9F5893Ad93CB2",
           poolAddress: "0xdEb89DE4bb6ecf5BFeD581EB049308b52d9b2Da7"
