@@ -45,19 +45,19 @@ describe('buildList', () => {
     for (let protocol of vaultsData.vaults) {
       for (let chain of protocol.chains) {
         for (let strategy of chain.strategies) {
-          const key = strategy.address;
+          const key = strategy.vaultAddress;
           expect(typeof map[key])
-              .to.equal('undefined', `duplicate strategy: ${strategy.address}`);
+              .to.equal('undefined', `duplicate strategy: ${strategy.vaultAddress}`);
           map[key] = true;
         }
       }
     }
   })
 
-  it('depositProxy addresses are valid and checksummed', () => {
+  it('proxyHelper addresses are valid and checksummed', () => {
     for (let protocol of vaultsData.vaults) {
       for (let chain of protocol.chains) {
-        expect(getAddress(chain.depositProxy)).to.eq(chain.depositProxy);
+        expect(getAddress(chain.proxyHelperAddress)).to.eq(chain.proxyHelperAddress);
       }
     }
   });
@@ -66,7 +66,7 @@ describe('buildList', () => {
     for (let protocol of vaultsData.vaults) {
       for (let chain of protocol.chains) {
         for (let strategy of chain.strategies) {
-          expect(getAddress(strategy.address)).to.eq(strategy.address);
+          expect(getAddress(strategy.vaultAddress)).to.eq(strategy.vaultAddress);
           expect(getAddress(strategy.poolAddress)).to.eq(strategy.poolAddress);
         }
       }

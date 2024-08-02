@@ -1,8 +1,7 @@
 const VAULT_URL = "https://app.jonesdao.io/smart-lp/42161"
 const BASE_URL = process.env.BASE_URL || "https://vaults-list.camelot.exchange"
 
-const baseStrategy = (poolAddress, { abiOverride, imageOverride, urlOverride }) => ({
-  abi: abiOverride || `${BASE_URL}/abi/jones/jonesstrategyrouter.json`,
+const baseStrategy = (poolAddress, { imageOverride, urlOverride }) => ({
   image: imageOverride || `${BASE_URL}/assets/jones/strategy-smartlp.png`,
   url: urlOverride || `${VAULT_URL}/${poolAddress}`,
 })
@@ -34,9 +33,9 @@ const strategyTemplates = {
   })
 }
 
-const createStrategy = ({strategy, symbol, address, poolAddress}, overrides={}) => ({
+const createStrategy = ({strategy, symbol, vaultAddress, poolAddress}, overrides={}) => ({
   symbol,
-  address, // use lpManager address here
+  vaultAddress, // use lpManager address here
   poolAddress,
   ...strategyTemplates[strategy](symbol, poolAddress, overrides)
 })
@@ -49,34 +48,31 @@ module.exports = jones = () => ({
   chains: [{
     chainId: 42161,
     api: "https://app.jonesdao.io/api/smart-lp/pools?dex=camelot",
-    depositProxy: "0x9220D07c1e8b5C170FA6011DB8a729E9898b6245",
-    depositProxyAbi: `${BASE_URL}/abi/jones/jonesproxyhelper.json`,
-    viewer: "0xcd0505BdC1Afd7F859B00CbE9EA3Dc4D79667955",
-    viewerAbi: `${BASE_URL}/abi/jones/jonesviewer.json`,
-    compounderAbi: `${BASE_URL}/abi/jones/jonescompounder.json`,
+    proxyHelperAddress: "0x9220D07c1e8b5C170FA6011DB8a729E9898b6245",
+    viewerAddress: "0xcd0505BdC1Afd7F859B00CbE9EA3Dc4D79667955",
     strategies: [
       createStrategy({
         strategy: "SLPBEAR",
         symbol: "ETH-USDC",
-        address: "0x840Dd18aC8510f43Fd0B52EDc73D74d012cDc174",
+        vaultAddress: "0x840Dd18aC8510f43Fd0B52EDc73D74d012cDc174",
         poolAddress: "0xB1026b8e7276e7AC75410F1fcbbe21796e8f7526"
       }),
       createStrategy({
         strategy: "SLPBULL",
         symbol: "ETH-USDC",
-        address: "0xAC181bC9e6217dA5753a426bE7aB90c062A78A7f",
+        vaultAddress: "0xAC181bC9e6217dA5753a426bE7aB90c062A78A7f",
         poolAddress: "0xB1026b8e7276e7AC75410F1fcbbe21796e8f7526"
       }),
       createStrategy({
         strategy: "SLPNARROW",
         symbol: "ETH-USDC",
-        address: "0x969D0296Ea7E06AbDA2E7B95CD40718484eCe450",
+        vaultAddress: "0x969D0296Ea7E06AbDA2E7B95CD40718484eCe450",
         poolAddress: "0xB1026b8e7276e7AC75410F1fcbbe21796e8f7526"
       }),
       createStrategy({
         strategy: "SLPWIDE",
         symbol: "ETH-USDC",
-        address: "0x94C36a1b7d7736fC14F00d008a56E1B589d55f2f",
+        vaultAddress: "0x94C36a1b7d7736fC14F00d008a56E1B589d55f2f",
         poolAddress: "0xB1026b8e7276e7AC75410F1fcbbe21796e8f7526"
       }),
     ]

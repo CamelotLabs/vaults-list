@@ -12,13 +12,13 @@ To add your vaults to an existing integration on Camelot frontend, you should cr
 
 Create the file if it doesn't exist, and add the corresponding entry in src/buildList.js
 
-**3. (Optional) Add your ABI files in src/abi/your_protocol_name/.**
+**3. Add your ABI files in src/abi/your_protocol_name/.**
 
-*The URI ABI paths in your_protocol_name.json file should start with BASE_URL (cf example-alm.json)*
+*The URI ABI paths in your_protocol_name.js file should start with BASE_URL (cf example-alm.json). Please use minified files.*
 
-**4. (Optional) Add your assets in src/assets/your_protocol_name/.**
+**4. Add your assets in src/assets/your_protocol_name/.**
 
-*The URI asset paths in your_protocol_name.json file should start with BASE_URL (cf example-alm.json)*
+*The URI asset paths in your_protocol_name.js file should start with BASE_URL (cf example-alm.json)*
 
 **5. Provide the following required information for your protocol.**
 
@@ -30,17 +30,16 @@ Create the file if it doesn't exist, and add the corresponding entry in src/buil
 **6. Provide the following required information for your supported chains.**
 - chainId (integer)
 - api (string): url, your API endpoint, should be implemented on Camelot's app beforehand
-- depositProxy (string): contract address, spNFT proxy used by Camelot for deposits
-- depositProxyAbi (string): url, ABI for the deposit proxy
+- proxyHelper (string): contract address, spNFT proxy used by Camelot for deposits
 - strategies (array): list of your strategies
 
 **7. Provide the following optional links for each of your strategies.**
 
 Follow the composition approach as demonstrated in each protocol file for adding strategies.
 
-Each strategy is composed via `createStrategy`. The first argument should be an object containing `strategy`, `symbol`, `address` & `poolAddress`. The second argument should be an object containing OPTIONAL override properties for the given strategy- `imageOverride`, `urlOverride`, `abiOverride`.
+Each strategy is composed via `createStrategy`. The first argument should be an object containing `strategy`, `symbol`, `address` & `poolAddress`. The second argument should be an object containing OPTIONAL override properties for the given strategy- `imageOverride`, `urlOverride`.
 
-Use override values if the default computed values for `image`, `url` or `abi` will be incorrect. These values can be computed differently based on the protocol, for example, Gamma uses `symbol` inside the vault URL but sometimes it's in the opposite order of `symbol`, breaking the computed value.
+Use override values if the default computed values for `image` or `url` will be incorrect. These values can be computed differently based on the protocol, for example, Gamma uses `symbol` inside the vault URL but sometimes it's in the opposite order of `symbol`, breaking the computed value.
 
 The `strategy` should directly map to a strategy key under `strategyTemplates`, which contains all the strategy specific information.
 
@@ -53,7 +52,6 @@ Ultimately, each strategy will contain:
 - strategy (string): strategy short name
 - fullname (string): strategy full name
 - address (string): contract address of the vault
-- abi (string): url, link to your abi file
 - image (string): url, link to your strategy illustration
 - url (string): url, link to the strategy page on your app
 - description (string)
