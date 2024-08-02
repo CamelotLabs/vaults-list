@@ -45,7 +45,7 @@ module.exports = beefy = () => ({
           strategy: "COWCENTRATED",
           symbol: "USDe-USDC",
           address: "0xC9a57BAD9AAbCC6f0c22474442985b7CF1eC6786",
-          poolAddress: "0xc23f308CF1bFA7efFFe592920a619F00990F8D74"
+          poolAddress: "0xc23f308CF1bFA7efFFB592920a619F00990F8D74"
         }),
         createStrategy({
           strategy: "COWCENTRATED",
