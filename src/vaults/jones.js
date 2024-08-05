@@ -11,25 +11,25 @@ const strategyTemplates = {
     ...baseStrategy(poolAddress, overrides),
     strategy: "SLP Bear",
     fullname: `Jones SLP Bear ${symbol}`,
-    description: "A strategy whose liquidity concentration helps protect against downwards volatility"
+    description: "This strategy concentrates liquidity in a way that favors downwards volatility. Users of the bear strategy concentrate more liquidity towards the secondary token in a pair, allowing them to earn more yield in downward volatility periods"
   }),
   SLPBULL: (symbol, poolAddress, overrides) => ({
     ...baseStrategy(poolAddress, overrides),
     strategy: "SLP Bull",
     fullname: `Jones SLP Bull ${symbol}`,
-    description: "A strategy whose liquidity concentration favors upwards volatility"
+    description: "This strategy concentrates liquidity in a way that favors upwards volatility. Users of the bull strategy concentrate more liquidity towards the primary token in a pair, allowing them to experience most of the price appreciation & earn more yield in upward volatility periods"
   }),
   SLPNARROW: (symbol, poolAddress, overrides) => ({
     ...baseStrategy(poolAddress, overrides),
     strategy: "SLP Narrow",
     fullname: `Jones SLP Narrow ${symbol}`,
-    description: "A strategy that can generate high yield, with a higher chance to rebalance as a tradeoff"
+    description: "This strategy concentrates liquidity in a narrow range with no directional bias. The result is an increased yield, but an increase in potential rebalances, which can escalate impermanent loss during volatile periods"
   }),
   SLPWIDE: (symbol, poolAddress, overrides) => ({
     ...baseStrategy(poolAddress, overrides),
     strategy: "SLP Wide",
     fullname: `Jones SLP Wide ${symbol}`,
-    description: "A strategy with less risk, with a wider range, decreasing the chance of a rebalance"
+    description: "This strategy concentrates liquidity in a wide range with no directional bias. The result is a relatively lower yield, but a reduction in potential rebalances, which can mitigate impermanent loss during volatile periods"
   })
 }
 
