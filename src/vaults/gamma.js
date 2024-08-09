@@ -675,6 +675,12 @@ module.exports = gamma = () => ({
           symbol: "uniETH-ETH",
           vaultAddress: "0xB9A3D77c2381a9188507814c623Ae5dB9e7727cd",
           poolAddress: "0xaf1C69a3849824852868a5559Bf9BFD00921148D"
+        }),
+        createStrategy({
+          strategy: "NARROW",
+          symbol: "ZRO-ETH",
+          vaultAddress: "0x6F2C54E78758a7F00CB0c2E7481f4a6bbc4B27fd",
+          poolAddress: "0x105ba85d9047dAF3f9FE941D8188d4b9A6900388"
         })
       ]
     }
