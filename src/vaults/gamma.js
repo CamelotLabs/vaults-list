@@ -57,12 +57,6 @@ module.exports = gamma = () => ({
       proxyHelperAddress: "0x851b3Fb3c3178Cd3FBAa0CdaAe0175Efa15a30f1",
       strategies: [
         createStrategy({
-          strategy: "WIDE",
-          symbol: "ETH-USDC.e",
-          vaultAddress: "0xA07770f83A7B0fD74510AEFe3E48749e3a0924Cc",
-          poolAddress: "0x521aa84ab3fcc4c05cABaC24Dc3682339887B126"
-        }),
-        createStrategy({
           strategy: "NARROW",
           symbol: "ETH-USDC.e",
           vaultAddress: "0x809acD841cDEDCCCd881a5e8D764903aD8d6D837",
@@ -121,12 +115,6 @@ module.exports = gamma = () => ({
           urlOverride: `${VAULT_URL}/weth-arb-narrow`
         }),
         createStrategy({
-          strategy: "WIDE",
-          symbol: "GRAIL-USDC.e",
-          vaultAddress: "0x1768eADFda4740F7Caa741C08dD6419ac4033623",
-          poolAddress: "0x8cc8093218bCaC8B1896A1EED4D925F6F6aB289F"
-        }),
-        createStrategy({
           strategy: "NARROW",
           symbol: "GRAIL-USDC.e",
           vaultAddress: "0x36260CB6DF1cfdAa7522bddF7e2f9Ae8E86BEF58",
@@ -136,12 +124,6 @@ module.exports = gamma = () => ({
           strategy: "WIDE",
           symbol: "PNP-ETH",
           vaultAddress: "0x23E60c9D50d64488C7C8c77aF43b306fe531B39D",
-          poolAddress: "0x13BC35D101B646Cf1F566f95077E67a9f5b301a3"
-        }),
-        createStrategy({
-          strategy: "NARROW",
-          symbol: "PNP-ETH",
-          vaultAddress: "0xf9403DeECBc3eDDa78DB2995DEa1a87Ffe141760",
           poolAddress: "0x13BC35D101B646Cf1F566f95077E67a9f5b301a3"
         }),
         createStrategy({
@@ -265,12 +247,6 @@ module.exports = gamma = () => ({
           urlOverride: `${VAULT_URL}/weth-lode-narrow`
         }),
         createStrategy({
-          strategy: "NARROW",
-          symbol: "UMAMI-ETH",
-          vaultAddress: "0x023059c196A1C692FE3fC543CF6a598d191a41DB",
-          poolAddress: "0x684773cE156147e28c3C095D00C6BC9da2444fBC"
-        }),
-        createStrategy({
           strategy: "STABLE",
           symbol: "LUSD-USDC",
           vaultAddress: "0x439e2D51BA26Fa062a1E4F0eDAA68F3B830Ca6da",
@@ -311,18 +287,6 @@ module.exports = gamma = () => ({
           symbol: "stEUR-USDC",
           vaultAddress: "0x95fe2EC2C1797cae5210AbD9cc9f061d5bD1583e",
           poolAddress: "0xCC4E4c18bAd7E1cC63Bb98915eEb3f412939955E"
-        }),
-        createStrategy({
-          strategy: "NARROW",
-          symbol: "stEUR-wstETH",
-          vaultAddress: "0xCA645ebB51D36d55EbC1211D3a229d80251d3977",
-          poolAddress: "0x6C41A770583Fc7141FBeA9ac741f9015A4De6FDa"
-        }),
-        createStrategy({
-          strategy: "NARROW",
-          symbol: "stEUR-ARB",
-          vaultAddress: "0xe7FB2aafc4C3AD3826FEB40EF0b03a6eca39c481",
-          poolAddress: "0xcAE4a98685fD488e8D2fC3780BAABC7d472f9D01"
         }),
         createStrategy({
           strategy: "PEGGED",
@@ -378,20 +342,6 @@ module.exports = gamma = () => ({
           poolAddress: "0xB4Db1971cf593c80E79DE9c1E3563393f4D7ac09"
         }),
         createStrategy({
-          strategy: "NARROW",
-          symbol: "AURY-USDC",
-          vaultAddress: "0x5EaD602D215F2d47B752E0e1D9dBFD49A92BA4aF",
-          poolAddress: "0x0cc4f64F7BF5fD175919b76B0d3183f1C50e630C"
-        }),
-        createStrategy({
-          strategy: "NARROW",
-          symbol: "GMBL-USDC",
-          vaultAddress: "0x527472949AC227861Fd7188a25F7156Af31a3F5A",
-          poolAddress: "0x70EB6E93E1f8bFB850126E23A1964Fd3DB789948"
-        }, {
-          urlOverride: `${VAULT_URL}/usdc-gmbl-narrow`
-        }),
-        createStrategy({
           strategy: "PEGGED",
           symbol: "plsDPX-DPX",
           vaultAddress: "0x3187a793B44E0173D5F8090795aF34F023F83131",
@@ -413,37 +363,9 @@ module.exports = gamma = () => ({
         }),
         createStrategy({
           strategy: "NARROW",
-          symbol: "MIM-ARB",
-          vaultAddress: "0x1164191754F726edB85466F84aE5f14f43C111a9",
-          poolAddress: "0xb4E0a7698c7cfB03508787C80647419364CcB8D0"
-        }, {
-          urlOverride: `${VAULT_URL}/arb-mim-narrow`
-        }),
-        createStrategy({
-          strategy: "WIDE",
-          symbol: "RDO-ETH",
-          vaultAddress: "0xfa45Ab1023b24037a37359b90802BD5370bAe546",
-          poolAddress: "0x1caB47198197A62Cc5f627CC5135f2bEA9610aE4"
-        }),
-        createStrategy({
-          strategy: "WIDE",
-          symbol: "FCTR-USDC",
-          vaultAddress: "0xB0d36B93Fae34b2a62B1C8Fc56CdcF95D3f5304A",
-          poolAddress: "0xc39D8c1F4e09133738A3f97C63C7E3300035d2bD"
-        }, {
-          urlOverride: "https://app.gamma.xyz/vault/camelot/arbitrum/"
-        }),
-        createStrategy({
-          strategy: "NARROW",
           symbol: "VRTX-USDC",
           vaultAddress: "0xe79372260b6C1384d09c44026e65216969aC4b31",
           poolAddress: "0x3Cf4Cb6Ce8CF3b147E6c444CF66526F5F0c16B92"
-        }),
-        createStrategy({
-          strategy: "WIDE",
-          symbol: "GOOD-USDC.e",
-          vaultAddress: "0x335C83471cCaB2A8508fafD6637c53C5362B9Cd0",
-          poolAddress: "0xc4f131f9267831Fd83C88CC6772c37BC51c697Ad"
         }),
         createStrategy({
           strategy: "STABLE",
@@ -461,23 +383,11 @@ module.exports = gamma = () => ({
         }),
         createStrategy({
           strategy: "WIDE",
-          symbol: "STEAK-ETH",
-          vaultAddress: "0x1Ad305E3b7E02217F62975A44E6504Ae312ad160",
-          poolAddress: "0xef5f1AaAD5ef09D29a381845161A5d188E6A37D3"
-        }),
-        createStrategy({
-          strategy: "WIDE",
           symbol: "wTAO-ETH",
           vaultAddress: "0x8b9F49e80681C7C09e02DaeBeCF72640F2a48fc6",
           poolAddress: "0xD4540eE4821b72Fa131A1f95D3E0831092a86ec6"
         },{
           urlOverride: `${VAULT_URL}/weth-wtao-wide`
-        }),
-        createStrategy({
-          strategy: "STABLE",
-          symbol: "esRDNT-RDNT",
-          vaultAddress: "0xAfC57BcA555b5215E943CBcB7c5F5902a88B05Ab",
-          poolAddress: "0x66a042c71d8fb550D2F048e517AaAa4F997b26D7"
         }),
         createStrategy({
           strategy: "WIDE",
@@ -545,12 +455,6 @@ module.exports = gamma = () => ({
         }),
         createStrategy({
           strategy: "WIDE",
-          symbol: "D2-ETH",
-          vaultAddress: "0x1f47E9eA77F4CfC9e12141888Aa056B5768D7e84",
-          poolAddress: "0xf114fA468113a75046ce75dBC64cdDD02F7ff76C"
-        }),
-        createStrategy({
-          strategy: "WIDE",
           symbol: "TRADE-USDT",
           vaultAddress: "0xb033Cc844C5d36EEaC96F9DB6e7a60750fFe78E4",
           poolAddress: "0x2B24f5cEe3Fdc3ed3F2B7b1d989A67452428ABF2"
@@ -574,12 +478,6 @@ module.exports = gamma = () => ({
           symbol: "PEAS-ETH",
           vaultAddress: "0x923Ca1b4a71CBb98077A527f5a59CD6b9C8C9c35",
           poolAddress: "0x44cC8b40B1483e62e59EF937441Ba6aA8E584A77"
-        }),
-        createStrategy({
-          strategy: "STABLE",
-          symbol: "taoUSD-USDC",
-          vaultAddress: "0x75D75Da173126bC648ba799C91A8fca106fFeAe9",
-          poolAddress: "0x94665D0572Fb4D4814e2aA0F78641fBbDa1F2Ce7"
         }),
         createStrategy({
           strategy: "WIDE",
@@ -630,27 +528,9 @@ module.exports = gamma = () => ({
         }),
         createStrategy({
           strategy: "WIDE",
-          symbol: "FLY-USDC",
-          vaultAddress: "0x32B6Eb43Aaa4cE2c22c5C7eE707b5467e2C1ff0c",
-          poolAddress: "0xD42ef780e9B290Aa071C08B8e766f29A53A7f982"
-        }),
-        createStrategy({
-          strategy: "NARROW",
-          symbol: "WBTC-USDC",
-          vaultAddress: "0x5FA08E5A59DaEe3086a28068A143AFf990C67A0F",
-          poolAddress: "0x02bE4f98FC9Ee4F612a139D84494CBf6c6c7F97f"
-        }),
-        createStrategy({
-          strategy: "WIDE",
           symbol: "KWENTA-ETH",
           vaultAddress: "0xA1C92e407AA4b6A62A22f5dE30C136e75E9D7E46",
           poolAddress: "0xd5451D82882c324Dfc621d527ffA462f2C5Ea130"
-        }),
-        createStrategy({
-          strategy: "WIDE",
-          symbol: "ODG-ETH",
-          vaultAddress: "0x43f2eB1EDE180DB1eE5268b041104698F4A6Bb86",
-          poolAddress: "0xF935263c9950EB2881FF58Bd6a76c3D2564A78D5"
         }),
         createStrategy({
           strategy: "WIDE",
@@ -663,12 +543,6 @@ module.exports = gamma = () => ({
           symbol: "IPOR-ETH",
           vaultAddress: "0xe526C003dCBECCA8dC97804D9eeFad4F56a3BD4F",
           poolAddress: "0xbb1bDf90a4ab42622F6fA0B28861B23C0d67E7c6"
-        }),
-        createStrategy({
-          strategy: "STABLE",
-          symbol: "USDV-USDC",
-          vaultAddress: "0x77a061c9827e685a01A6bF2F44911CE02Bb46B1D",
-          poolAddress: "0xfa893368620a0a26eC2DA65836962768aB5BeB9a"
         }),
         createStrategy({
           strategy: "PEGGED",
