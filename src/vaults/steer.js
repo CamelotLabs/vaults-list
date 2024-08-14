@@ -93,12 +93,6 @@ module.exports = steer = () => ({
         poolAddress: "0xA27cb8a8ACf2DE50f3174cb68ec0bD3180D53921"
       }),
       createStrategy({
-        strategy: "CRSV",
-        symbol: "MAGIC-ETH",
-        vaultAddress: "0x1A18770DE331D56F121EdBf92D5809A5bE1471A0",
-        poolAddress: "0x1106dB7165A8d4a8559B441eCdEe14a5d5070DbC"
-      }),
-      createStrategy({
         strategy: "HLCS",
         symbol: "ETH-ARB",
         vaultAddress: "0x1AB39C875e00eF63758c571C3f6292C3D94dDD28",
@@ -183,12 +177,6 @@ module.exports = steer = () => ({
         poolAddress: "0x2d879f8A38648a05c2dba7DeE2A33d00F440e04B"
       }),
       createStrategy({
-        strategy: "MVCS",
-        symbol: "stEUR-ARB",
-        vaultAddress: "0xa02e191eFd6B1BaCc9a8e133c4B9580F46863254",
-        poolAddress: "0xcAE4a98685fD488e8D2fC3780BAABC7d472f9D01"
-      }),
-      createStrategy({
         strategy: "CRSV",
         symbol: "Silo-ETH",
         vaultAddress: "0xAd5EDf3b5B6224A62Fe6Df7Fc2469F473509B207",
@@ -199,12 +187,6 @@ module.exports = steer = () => ({
         symbol: "stEUR-USDC",
         vaultAddress: "0xaE3776AaDF76Cb25d63Cd059d9CA82dAFdF4840C",
         poolAddress: "0xCC4E4c18bAd7E1cC63Bb98915eEb3f412939955E"
-      }),
-      createStrategy({
-        strategy: "CRSV",
-        symbol: "plsARB-ARB",
-        vaultAddress: "0xB67f53988103AF01E2AA7A67461D86893BC7ff26",
-        poolAddress: "0x47A52B2beE1a0cc9A34BB9EE34C357C054112c3E"
       }),
       createStrategy({
         strategy: "MVCS",
@@ -250,63 +232,15 @@ module.exports = steer = () => ({
       }),
       createStrategy({
         strategy: "CRSV",
-        symbol: "wstETH-ETHx",
-        vaultAddress: "0x80a1FE04e7C2CFB62cfEE67361d1A3B57902766A",
-        poolAddress: "0xeeDB8542778f37A273D16B8FA46A007b9f6f5854"
-      }),
-      createStrategy({
-        strategy: "CRSV",
         symbol: "USDT-USDC",
         vaultAddress: "0xfaCC26b61728Fc1930291e3c8Ff589e82a277A27",
         poolAddress: "0x3AB5DD69950a948c55D1FBFb7500BF92B4Bd4C48"
-      }),
-      createStrategy({
-        strategy: "CRSV",
-        symbol: "stEUR-FLR",
-        vaultAddress: "0x5aB717389bae00029223eA86bBd21db58C390543",
-        poolAddress: "0x37779cf6A027959228DA273fBC2Ab708A01638d6"
       }),
       createStrategy({
         strategy: "SSSV",
         symbol: "fUSDC-USDC",
         vaultAddress: "0x88bb76fE46977a9B627222694d7958F1955bd881",
         poolAddress: "0xAc07ed4CbdDA2cB17F9AEca2919c825dCb2882B9"
-      }),
-      createStrategy({
-        strategy: "SSSV",
-        symbol: "fUSDC-USDC.e",
-        vaultAddress: "0xcdf750Bf7e2a5EbcF0A8771cf1a3AD0a9ded48Af",
-        poolAddress: "0xEA5b743dEd9d2E85c6eBebcc90a7a06031575708"
-      }),
-      createStrategy({
-        strategy: "SSSV",
-        symbol: "stEUR-flrEUR",
-        vaultAddress: "0x3Df13f8430B9DBd148a178f0Fe361b18A38A01d1",
-        poolAddress: "0x37779cf6A027959228DA273fBC2Ab708A01638d6"
-      }),
-      createStrategy({
-        strategy: "SSSV",
-        symbol: "ETH+-WETH",
-        vaultAddress: "0x9d9C0A46E0A84f8e64Df60A07F217F2A53DAEEa3",
-        poolAddress: "0x8DD043B553F96Fb8f30d6B97aCAD12A940A9c384"
-      }),
-      createStrategy({
-        strategy: "SSSV",
-        symbol: "rgUSD-USDC",
-        vaultAddress: "0xba3eBf55d96CAc487A11B49477840c190f36E419",
-        poolAddress: "0x8359f9ABC3164ffd59964d3dac7052a40418A8a2"
-      }),
-      createStrategy({
-        strategy: "SSSV",
-        symbol: "eUSD-rgUSD",
-        vaultAddress: "0xF2c44473799aF5EE16703A509Ff5D9dF95f7764C",
-        poolAddress: "0x5263f9cAC15CeEE736dAd4D014af26D8F6ea8D41"
-      }),
-      createStrategy({
-        strategy: "SSSV",
-        symbol: "KNOX-rgUSD",
-        vaultAddress: "0xC8fB6F6dDaD4df2D15F342C591f7a88cC5e14F63",
-        poolAddress: "0x5C77A1740baf754A532739FDAEd89F5FC74B869D"
       }),
       createStrategy({
         strategy: "SSSV",

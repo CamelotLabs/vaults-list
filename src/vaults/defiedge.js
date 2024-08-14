@@ -35,18 +35,6 @@ module.exports = defiEdge = () => ({
       strategies: [
         createStrategy({
           strategy: "ALO",
-          symbol: "ETH-USDC.e",
-          vaultAddress: "0x0D1c3645BDc77AfE77F14D54a01e26A47bD89BF2",
-          poolAddress: "0x521aa84ab3fcc4c05cABaC24Dc3682339887B126"
-        }),
-        createStrategy({
-          strategy: "ALO",
-          symbol: "ARB-USDC.e",
-          vaultAddress: "0x6977eeE64dFDf8A40984A1ca809A623075A48D42",
-          poolAddress: "0x4E635D35bB02576d0eAb75eF5E7EBE61C12F3C76"
-        }),
-        createStrategy({
-          strategy: "ALO",
           symbol: "ARB-ETH",
           vaultAddress: "0x402FDFc475A6bEF3326dd074c3C0FeDb4f0ad0F1",
           poolAddress: "0xe51635ae8136aBAc44906A8f230C2D235E9c195F"
@@ -71,12 +59,6 @@ module.exports = defiEdge = () => ({
         }),
         createStrategy({
           strategy: "ALO",
-          symbol: "GRAIL-USDC.e",
-          vaultAddress: "0x5A4628Be9f5E838aa634c45Cb2Fa258FCCBaF52d",
-          poolAddress: "0x8cc8093218bCaC8B1896A1EED4D925F6F6aB289F"
-        }),
-        createStrategy({
-          strategy: "ALO",
           symbol: "KUJI-ETH",
           vaultAddress: "0xCCeE66fe04B1b403fFDeaBc4f3e12e390ec99497",
           poolAddress: "0x22427D20480DE289795Ca29c3ADDdb57A568e285"
@@ -86,36 +68,6 @@ module.exports = defiEdge = () => ({
           symbol: "KUJI-USDC",
           vaultAddress: "0x6F72AA5e1b42F0d091Ba6C2b9fE3E326A3DF6160",
           poolAddress: "0xD8043be1668FAc205B9747E46D0C26c1Eae2708f"
-        }),
-        createStrategy({
-          strategy: "ALO",
-          symbol: "UMAMI-ETH",
-          vaultAddress: "0xB7cFaCb1412546FB7f7d52ad12F564109Ff1b6dF",
-          poolAddress: "0x684773cE156147e28c3C095D00C6BC9da2444fBC"
-        }),
-        createStrategy({
-          strategy: "ALO",
-          symbol: "DPX-ETH",
-          vaultAddress: "0x6DA519D8652308D28523906e0d8079DBc0e97c06",
-          poolAddress: "0x59A327d948db1810324a04D69CBe9fe9884F8F28"
-        }),
-        createStrategy({
-          strategy: "ALO",
-          symbol: "JONES-ETH",
-          vaultAddress: "0xFf0f334669DE1f1448f330D31E030d686815F07D",
-          poolAddress: "0x0e878029D18cD7F630823439cf389d1601d9dbD9"
-        }),
-        createStrategy({
-          strategy: "ALO",
-          symbol: "fUSDC-ARB",
-          vaultAddress: "0xCcDa8ab52c5F01d34C05250FE2195c027EFF0Bd7",
-          poolAddress: "0x71BAd6240E1489FdDCc345CCD8B1fBA00085dd2E"
-        }),
-        createStrategy({
-          strategy: "ALO",
-          symbol: "ETH-LODE",
-          vaultAddress: "0x1E7a8DdC79a5De638a1c63E41b41B4B25f64929c",
-          poolAddress: "0x8280B08Dfb38E6926ffBb0F76F39DDAb8160D120"
         }),
         createStrategy({
           strategy: "ALO",
