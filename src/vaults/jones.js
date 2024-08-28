@@ -297,18 +297,6 @@ module.exports = jones = () => ({
           poolAddress: "0x1818FF61ba19C06A554C803eD98B603D5b7D1B43",
         }),
         createStrategy({
-          strategy: "SLPBASE",
-          symbol: "WeETH-WETH",
-          vaultAddress: "0x0818e49e7b553924D239A107928D1275ddf5705D",
-          poolAddress: "0x293DFD996d5cd72Bed712B0EEAb96DBE400c0416",
-        }),
-        createStrategy({
-          strategy: "SLPALT",
-          symbol: "WeETH-WETH",
-          vaultAddress: "0x727FFb6658202BC50fc155B99F72D8D33db82f8F",
-          poolAddress: "0x293DFD996d5cd72Bed712B0EEAb96DBE400c0416",
-        }),
-        createStrategy({
           strategy: "SLPBEAR",
           symbol: "WINR-USDC.e",
           vaultAddress: "0x21D0C323D14c8aE2EBAF4aB2584948748e72e8dF",
@@ -405,8 +393,8 @@ module.exports = jones = () => ({
           poolAddress: "0xe8795cF9c2309eCfe05Df028eB0F21D5D6e3a951",
         }),
         createStrategy({
-          strategy: "SLPBASE",
-          symbol: "Boop-WETH",
+          strategy: "SLPWIDE",
+          symbol: "BOOP-WETH",
           vaultAddress: "0xd4fa0d9Bbfa53D20988C185f8A8B625Dee87bF1A",
           poolAddress: "0x92d06120691219fF49Ba5d65777ad557Fd4f80D7",
         }),
