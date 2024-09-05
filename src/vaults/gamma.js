@@ -156,7 +156,7 @@ module.exports = gamma = () => ({
         }),
         createStrategy({
           strategy: "NARROW",
-          symbol: "FLR-USDC.e",
+          symbol: "flrEUR-USDC.e",
           vaultAddress: "0x075b6c049B12490809f8D450528465F444AE448F",
           poolAddress: "0xC6E932f9107A9EB2570E39697C1bEcF2c9551770"
         }),
