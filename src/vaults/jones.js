@@ -37,7 +37,7 @@ const strategyTemplates = {
   }),
   SLPCRUISECONTROL: (symbol, poolAddress, overrides) => ({
     ...baseStrategy(poolAddress, overrides),
-    strategy: "SLP Cruise Control",
+    strategy: "SLP Pegged",
     fullname: `Jones SLP Cruise Control ${symbol}`,
     description:
       "This strategy is a pegged asset liquidity management strategy that focuses liquidity within a range aligned with the movement of the underlying assets' prices. This automated approach allows users to earn yield by optimizing liquidity placement across both assets in the pool, without requiring manual adjustments.",
