@@ -35,6 +35,13 @@ const strategyTemplates = {
     description:
       "This strategy concentrates liquidity in a wide range with no directional bias. The result is a relatively lower yield, but a reduction in potential rebalances, which can mitigate impermanent loss during volatile periods",
   }),
+  SLPCRUISECONTROL: (symbol, poolAddress, overrides) => ({
+    ...baseStrategy(poolAddress, overrides),
+    strategy: "SLP Cruise Control",
+    fullname: `Jones SLP Cruise Control ${symbol}`,
+    description:
+      "This strategy is a pegged asset liquidity management strategy that focuses liquidity within a range aligned with the movement of the underlying assets' prices. This automated approach allows users to earn yield by optimizing liquidity placement across both assets in the pool, without requiring manual adjustments.",
+  }),
 };
 
 const createStrategy = ({ strategy, symbol, vaultAddress, poolAddress }, overrides = {}) => ({
@@ -421,6 +428,12 @@ module.exports = jones = () => ({
           symbol: "XAI-WETH",
           vaultAddress: "0xb97919b598096721462C7275EEBA5ee3Ab0aAf55",
           poolAddress: "0xba1CF57b1A7401Cc24622366808CeA1f209a2c50",
+        }),
+        createStrategy({
+          strategy: "SLPCRUISECONTROL",
+          symbol: "weETH-WETH",
+          vaultAddress: "0x0818e49e7b553924D239A107928D1275ddf5705D",
+          poolAddress: "0x293DFD996d5cd72Bed712B0EEAb96DBE400c0416",
         }),
       ],
     },
