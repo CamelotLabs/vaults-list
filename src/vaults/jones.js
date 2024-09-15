@@ -435,6 +435,18 @@ module.exports = jones = () => ({
           vaultAddress: "0x0818e49e7b553924D239A107928D1275ddf5705D",
           poolAddress: "0x293DFD996d5cd72Bed712B0EEAb96DBE400c0416",
         }),
+        createStrategy({
+          strategy: "SLPCRUISECONTROL",
+          symbol: "ezETH-WETH",
+          vaultAddress: "0xb4d6D206682c5c526995F864BA24D460A652E190",
+          poolAddress: "0xaA45265A94C93802BE9511E426933239117E658f",
+        }),
+        createStrategy({
+          strategy: "SLPCRUISECONTROL",
+          symbol: "rsETH-WETH",
+          vaultAddress: "0xea10f04a2861a1a6f6cB8Da8E8710b2Fca9Fbd2B",
+          poolAddress: "0xb355ccE5CBAF411bd56e3b092F5AA10A894083ae",
+        }),
       ],
     },
   ],
