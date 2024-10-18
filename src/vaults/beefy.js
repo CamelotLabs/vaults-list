@@ -162,7 +162,7 @@ module.exports = beefy = () => ({
         createStrategy({
           strategy: "COWCENTRATED",
           symbol: "ORDER-ETH",
-          vaultAddress: "0x42cf53622b413b40cb24f78a79e0e76e587b7f33",
+          vaultAddress: "0x42cF53622B413B40cb24f78a79E0e76e587b7f33",
           poolAddress: "0x256899bD2E99C6736B34caF298719Cc709925819"
         })
       ]
