@@ -158,6 +158,12 @@ module.exports = beefy = () => ({
           symbol: "rsETH-ETH",
           vaultAddress: "0xac8246F01197fB783Bf1A80960821835045Ec680",
           poolAddress: "0xb355ccE5CBAF411bd56e3b092F5AA10A894083ae"
+        }),
+        createStrategy({
+          strategy: "COWCENTRATED",
+          symbol: "ORDER-ETH",
+          vaultAddress: "0x42cf53622b413b40cb24f78a79e0e76e587b7f33",
+          poolAddress: "0x256899bD2E99C6736B34caF298719Cc709925819"
         })
       ]
     }
