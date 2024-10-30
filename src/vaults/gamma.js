@@ -54,6 +54,7 @@ module.exports = gamma = () => ({
     {
       chainId: 42161,
       api: "https://wire2.gamma.xyz/camelot/arbitrum/hypervisors/allData",
+      uniProxyAddress: "0x1F1Ca4e8236CD13032653391dB7e9544a6ad123E",
       proxyHelperAddress: "0x851b3Fb3c3178Cd3FBAa0CdaAe0175Efa15a30f1",
       strategies: [
         createStrategy({
