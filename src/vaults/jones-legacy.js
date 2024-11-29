@@ -31,6 +31,7 @@ module.exports = jones = () => ({
     chainId: 42161,
     api: "https://camelot-api.defiedge.io/arbitrum/details",
     proxyHelperAddress: "0xc4eb9fff53581130e65E3B60b31295C52509C11F",
+    helperAddress: "0xc4eb9fff53581130e65E3B60b31295C52509C11F",
     strategies: [
       createStrategy({
         strategy: "SMARTLP",
