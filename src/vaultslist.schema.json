@@ -101,6 +101,12 @@
           "pattern": "^0x[a-fA-F0-9]{40}$",
           "examples": ["0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"]
         },
+        "helperAddress": {
+          "type": "string",
+          "description": "The checksummed address of Camelot's Helper contract for the specified ALM on this chainId",
+          "pattern": "^0x[a-fA-F0-9]{40}$",
+          "examples": ["0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"]
+        },
         "strategies": {
           "description": "An array of strategies info associated with the ALM on this chain",
           "items": {
@@ -108,7 +114,7 @@
           }
         }
       },
-      "required": ["chainId", "api", "proxyHelperAddress", "strategies"]
+      "required": ["chainId", "api", "proxyHelperAddress", "helperAddress", "strategies"]
     },
     "ALMInfo": {
       "type": "object",

@@ -56,6 +56,7 @@ module.exports = gamma = () => ({
       api: "https://wire2.gamma.xyz/camelot/arbitrum/hypervisors/allData",
       uniProxyAddress: "0x1F1Ca4e8236CD13032653391dB7e9544a6ad123E",
       proxyHelperAddress: "0x851b3Fb3c3178Cd3FBAa0CdaAe0175Efa15a30f1",
+      helperAddress: "0xb2B2a946BE40054bE345610878f8Da3076273bd6",
       strategies: [
         createStrategy({
           strategy: "NARROW",

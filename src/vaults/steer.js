@@ -73,6 +73,7 @@ module.exports = steer = () => ({
     chainId: 42161,
     api: "https://api.steer.finance/camelot/vaults",
     proxyHelperAddress: "0x5864962AE89B700F44E0552930da9455DA3B25F2",
+    helperAddress: "0x279fA58e8b2d52683c0a65733e9825102DAdE413",
     strategies: [
       createStrategy({
         strategy: "MVCS",

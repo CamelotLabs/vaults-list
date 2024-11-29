@@ -61,6 +61,7 @@ module.exports = jones = () => ({
       chainId: 42161,
       api: "https://app.jonesdao.io/api/smart-lp/pools?dex=camelot",
       proxyHelperAddress: "0x9220D07c1e8b5C170FA6011DB8a729E9898b6245",
+      helperAddress: "0x77025D4c9B6CFeec9f224C592DafdfC64f405AEc",
       viewerAddress: "0xcd0505BdC1Afd7F859B00CbE9EA3Dc4D79667955",
       strategies: [
         createStrategy({

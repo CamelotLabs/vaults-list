@@ -32,6 +32,7 @@ module.exports = beefy = () => ({
       chainId: 42161,
       api: "https://api.beefy.finance/cow-vaults",
       proxyHelperAddress: "0x5E26bA756e1E39429C8B2620263c20295535897A",
+      helperAddress: "0x8aA8a6f0138880E687289941dA0738548F6184fE",
       strategies: [
         createStrategy({
           strategy: "COWCENTRATED",
