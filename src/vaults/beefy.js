@@ -15,10 +15,11 @@ const strategyTemplates = {
   }),
 }
 
-const createStrategy = ({strategy, symbol, vaultAddress, poolAddress}, overrides={}) => ({
+const createStrategy = ({strategy, symbol, vaultAddress, strategyAddress, poolAddress}, overrides={}) => ({
   symbol,
   vaultAddress,
   poolAddress,
+  strategyAddress,
   ...strategyTemplates[strategy](symbol, overrides)
 })
 
